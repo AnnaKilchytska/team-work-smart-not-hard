@@ -1,11 +1,11 @@
 {
-  "name": "parcel-project-template",
+  "name": "team-work-smart-not-hard",
   "version": "2.0.0",
   "description": "",
-  "homepage": "https://goitacademy.github.io/parcel-project-template",
+  "homepage": "https://github.com/AnnaKilchytska/team-work-smart-not-hard",
   "scripts": {
     "start": "parcel src/*.html",
-    "build": "parcel build src/*.html --public-url /parcel-project-template/"
+    "build": "parcel build src/*.html --public-url /team-work-smart-not-hard/"
   },
   "repository": {
     "type": "git",

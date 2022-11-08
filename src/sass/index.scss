@@ -1,2 +1,14 @@
 @import './common';
-@import './example';
+@import './utils/variables';
+@import './utils/breakpoints';
+@import './utils/vasually-hidden';
+@import './base/base';
+@import './components/header';
+@import './components/mobile-menu';
+@import './components/products';
+@import './components/about';
+@import './components/advantages';
+@import './components/gallery';
+@import './components/customer-reviews';
+@import './components/contacts';
+@import './components/footer';

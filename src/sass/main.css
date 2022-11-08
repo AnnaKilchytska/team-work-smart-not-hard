@@ -1,0 +1,214 @@
+@import '~node_modules/modern-normalize/modern-normalize.css';
+.section__title--visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  padding: 0;
+  overflow: hidden;
+  border: 0;
+  clip: rect(0 0 0 0);
+}
+
+body {
+  font-family: "Montserrat", sans-serif;
+  padding: 0;
+  margin: 0;
+}
+
+h1,
+h2,
+h3,
+p {
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
+img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+
+ul {
+  padding-left: 0;
+  margin: 0;
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+.container {
+  margin-left: auto;
+  margin-right: auto;
+  padding-right: 20px;
+  padding-left: 20px;
+}
+@media screen and (min-width: 480px) {
+  .container {
+    width: 480px;
+  }
+}
+@media screen and (min-width: 768px) {
+  .container {
+    width: 768px;
+    padding-right: 32px;
+    padding-left: 32px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .container {
+    width: 1200px;
+    padding-right: 16px;
+    padding-left: 16px;
+  }
+}
+
+.section {
+  padding-top: 60px;
+  padding-bottom: 60px;
+}
+
+.section--no-padding-top {
+  padding-top: 0;
+}
+
+@media screen and (min-width: 768px) {
+  .section--productsn {
+    padding-bottom: 82px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .section--productsn {
+    padding-bottom: 66px;
+  }
+}
+
+.section--about {
+  padding-bottom: 42px;
+}
+@media screen and (min-width: 768px) {
+  .section--about {
+    padding-bottom: 48px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .section--about {
+    padding-bottom: 60px;
+  }
+}
+
+.section--advantages {
+  padding-bottom: 36px;
+}
+@media screen and (min-width: 768px) {
+  .section--advantages {
+    padding-bottom: 40px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .section--advantages {
+    padding-bottom: 86px;
+  }
+}
+
+.section--gallery {
+  padding-bottom: 75px;
+}
+@media screen and (min-width: 768px) {
+  .section--gallery {
+    padding-bottom: 55px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .section--gallery {
+    padding-bottom: 123px;
+  }
+}
+
+.section--reviews {
+  padding-bottom: 48px;
+}
+@media screen and (min-width: 768px) {
+  .section--reviews {
+    padding-bottom: 80px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .section--reviews {
+    padding-bottom: 100px;
+  }
+}
+
+.section--contacts {
+  padding-bottom: 32px;
+}
+@media screen and (min-width: 768px) {
+  .section--contacts {
+    padding-bottom: 60px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .section--contacts {
+    padding-bottom: 64px;
+  }
+}
+
+.section__title {
+  font-family: "Seymour One";
+  font-weight: 400;
+  font-size: 30px;
+  line-height: 1.27em;
+  text-align: center;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+  color: #131313;
+}
+@media screen and (min-width: 768px) {
+  .section__title {
+    font-size: 34px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .section__title {
+    font-size: 36px;
+    line-height: 1.25em;
+    letter-spacing: 0.06em;
+  }
+}
+
+.section__title--light-color {
+  color: #fcfcfc;
+}
+
+.section__suptitle {
+  font-family: "Montserrat";
+  font-weight: 800;
+  font-size: 18px;
+  line-height: 1.22em;
+  text-align: center;
+  text-transform: uppercase;
+  color: #131313;
+}
+@media screen and (min-width: 768px) {
+  .section__suptitle {
+    font-size: 22px;
+    line-height: 1.23em;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .section__suptitle {
+    font-size: 30px;
+    letter-spacing: 0.04em;
+  }
+}
+
+.section__suptitle--light-color {
+  color: #fcfcfc;
+}
+
+review__img {
+  border-radius: 50%;
+}/*# sourceMappingURL=main.css.map */

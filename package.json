@@ -2,7 +2,7 @@
   "name": "team-work-smart-not-hard",
   "version": "2.0.0",
   "description": "",
-  "homepage": "https://github.com/AnnaKilchytska/team-work-smart-not-hard",
+  "homepage": "https://annakilchytska.github.io/team-work-smart-not-hard",
   "scripts": {
     "start": "parcel src/*.html",
     "build": "parcel build src/*.html --public-url /team-work-smart-not-hard/"

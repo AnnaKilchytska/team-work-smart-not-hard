@@ -1,33 +1,42 @@
-<div class="mobile-menu js-menu-container">
-  <picture class="logo-image">
-    <source
-      media="(min-width: 768px)"
-      srcset="./images/logo-tab.png 1x, ./images/logo-tab@2x.png 2x"
-    />
-    <source
-      media="(max-width: 767px)"
-      srcset="./images/logo-mobile.png 1x, ./images/logo-mobile@2x.png 2x"
-    />
-    <img src="./images/logo-mobile.png" alt="логотип компанії" />
-  </picture>
-  <button class="mobile-menu__close-btn js-close-menu">
-    <svg class="mobile-menu__close-icon" width="32" height="32">
-      <use href="./images/icons.svg#icon-btn-close"></use>
-    </svg>
-  </button>
-  <ul class="mobile-menu__list">
-    <li class="mobile-menu__item">
-      <a href="./" class="mobile-menu__link">Home</a>
-    </li>
-    <li class="mobile-menu__item">
-      <a href="./#about" class="mobile-menu__link">How it’s made?</a>
-    </li>
-    <li class="mobile-menu__item">
-      <a href="./#" class="mobile-menu__link">Our products</a>
-    </li>
-    <li class="mobile-menu__item">
-      <a href="./#contacts" class="mobile-menu__link">Contact</a>
-    </li>
-  </ul>
-  <button data-modal-open type="button" class="mobile-menu__btn">Buy now</button>
+<div class="mobile-menu" data-menu>
+  <div class="container mobile-menu__container">
+    <picture class="logo-image">
+      <source
+        media="(min-width: 768px)"
+        srcset="./images/logo-tab.png 1x, ./images/logo-tab@2x.png 2x"
+      />
+      <source
+        media="(max-width: 767px)"
+        srcset="./images/logo-mobile.png 1x, ./images/logo-mobile@2x.png 2x"
+      />
+      <img src="./images/logo-mobile.png" alt="логотип компанії" />
+    </picture>
+    <button class="mobile-menu__close-btn" data-menu-close>
+      <svg
+        class="mobile-menu__close-icon"
+        width="32"
+        height="32"
+        aria-label="перемикач мобільного меню"
+      >
+        <use href="./images/icons.svg#icon-btn-close"></use>
+      </svg>
+    </button>
+    <ul class="mobile-menu__list">
+      <li class="mobile-menu__item">
+        <a href="./" class="mobile-menu__link">Home</a>
+      </li>
+      <li class="mobile-menu__item">
+        <a href="./#about" class="mobile-menu__link">How it’s made?</a>
+      </li>
+      <li class="mobile-menu__item">
+        <a href="./#" class="mobile-menu__link">Our products</a>
+      </li>
+      <li class="mobile-menu__item">
+        <a href="./#contacts" class="mobile-menu__link">Contact</a>
+      </li>
+    </ul>
+    <button data-modal-open type="button" class="mobile-menu__btn">
+      Buy now
+    </button>
+  </div>
 </div>

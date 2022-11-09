@@ -67,6 +67,12 @@
   font-size: 12px;
   line-height: 1.25;
   color: $primary-black-color;
+  transition: background-color $cubic;
+
+  &:hover,
+  &:focus {
+    background-color: $active-btn-color;
+  }
 }
 
 @media screen and (min-width: 768px) {

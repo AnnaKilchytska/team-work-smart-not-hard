@@ -1,1 +1,44 @@
-<header></header>
+<header class="pg-header">
+  <div class="container pg-header__container">
+    <a href="#" class="pg-header__logo-link">
+      <picture class="pg-header__logo">
+        <source media="(max-width: 767px)" srcset="./images/logo-320.png" />
+        <source media="(max-width: 1119px)" srcset="./images/logo-768.png" />
+        <source media="(min-width: 1200px)" srcset="./images/logo-1200.png" />
+        <img
+          src="./images/logo-320.png"
+          alt="cite logo - icecreame horn"
+        /> </picture
+    ></a>
+
+    <button class="burger-menu__btn js-open-menu" type="button">
+      <svg class="burger-menu__icon" width="32" height="32">
+        <use href="./images/icons.svg#icon-burger"></use>
+      </svg>
+    </button>
+
+    <nav class="pg-header__nav navigation">
+      <ul class="navigation__list">
+        <li class="navigation__item">
+          <a class="navigation__link" href="#">Home</a>
+        </li>
+        <li class="navigation__item">
+          <a class="navigation__link" href="#">How it’s made?</a>
+        </li>
+        <li class="navigation__item">
+          <a class="navigation__link" href="#">Our products</a>
+        </li>
+        <li class="navigation__item">
+          <a class="navigation__link" href="#">Contact</a>
+        </li>
+      </ul>
+    </nav>
+
+    <button type="button" class="buy-now-btn js-buy-now-modal-open">
+      Buy now
+      <svg class="btn-icon" width="12px" height="12px">
+        <use href="./images/icons.svg#icon-btn-arrow"></use>
+      </svg>
+    </button>
+  </div>
+</header>

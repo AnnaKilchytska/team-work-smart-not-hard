@@ -100,59 +100,125 @@
   box-shadow: 0px 5.26027px 19.726px rgba(212, 20, 67, 0.1);
   border-radius: 15.7808px;
 
-  &:nth-child(2) {
-    & .buy-now__underlay {
+  &::before {
+    content: '';
+    position: absolute;
+    top: -50%;
+    z-index: 9999;
+
+    width: 131px;
+    height: 131px;
+    border-radius: 98px;
+    background-size: cover;
+    overflow: hidden;
+
+    box-shadow: 0px 5.26027px 19.726px rgba(153, 114, 23, 0.25);
+  }
+
+  &::after {
+    content: '';
+    position: absolute;
+    top: calc(-50% + 6px);
+    width: 131px;
+    height: 131px;
+
+    border-radius: 98px;
+  }
+
+  &:first-of-type {
+    &::before,
+    &::after {
+      background: linear-gradient(
+          0deg,
+          rgba(156, 190, 143, 0.7),
+          rgba(156, 190, 143, 0.7)
+        ),
+        #d9d9d9;
+    }
+    &::before {
+      content: '';
+      background-image: url('/src/images/buy-now/ice-coffee-modal-min.jpg');
+    }
+    @media (min-device-pixel-ratio: 2),
+      (-webkit-min-device-pixel-ratio: 2),
+      (min-resolution: 192dpi),
+      (min-resolution: 2dppx) {
+      &::before {
+        background-image: url('/src/images/buy-now/ice-coffee-modal@2x-min.jpg');
+        background-size: cover;
+      }
+    }
+
+    &::after {
+      content: '';
+      box-shadow: 0px 5.26027px 19.726px rgba(10, 136, 23, 0.25);
+    }
+  }
+
+  &:nth-of-type(2) {
+    background-color: $additional-bg-color-2;
+    border-color: $additional-bg-color-2;
+
+    &::before,
+    &::after {
       background: linear-gradient(
           0deg,
           rgba(248, 210, 78, 0.7),
           rgba(248, 210, 78, 0.7)
         ),
         #d9d9d9;
+    }
+
+    &::before {
+      content: '';
+      background-image: url('/src/images/buy-now/ice-cream-modal-min.jpg');
+    }
+    @media (min-device-pixel-ratio: 2),
+      (-webkit-min-device-pixel-ratio: 2),
+      (min-resolution: 192dpi),
+      (min-resolution: 2dppx) {
+      &::before {
+        background-image: url('/src/images/buy-now/ice-cream-modal@2x-min.jpg');
+        background-size: cover;
+      }
+    }
+
+    &::after {
+      content: '';
       box-shadow: 0px 5.26027px 19.726px rgba(153, 114, 23, 0.25);
     }
-    background-color: $additional-bg-color-2;
-    border-color: $additional-bg-color-2;
   }
 
-  &:nth-child(3) {
-    & .buy-now__underlay {
+  &:nth-of-type(3) {
+    border-color: $additional-bg-color-3;
+
+    &::before,
+    &::after {
       background: linear-gradient(
           0deg,
           rgba(213, 117, 63, 0.7),
           rgba(213, 117, 63, 0.7)
         ),
         #d9d9d9;
+    }
+    &::before {
+      content: '';
+      background-image: url('/src/images/buy-now/milkshake-modal-min.jpg');
+    }
+    @media (min-device-pixel-ratio: 2),
+      (-webkit-min-device-pixel-ratio: 2),
+      (min-resolution: 192dpi),
+      (min-resolution: 2dppx) {
+      &::before {
+        background-image: url('/src/images/buy-now/milkshake-modal@2x-min.jpg');
+        background-size: cover;
+      }
+    }
+    &::after {
+      content: '';
       box-shadow: 0px 5.26027px 19.726px rgba(0, 0, 0, 0.25);
     }
-    border-color: $additional-bg-color-3;
   }
-}
-
-.buy-now__underlay {
-  position: absolute;
-  top: calc(-50% + 6px);
-  width: 131;
-  height: 131;
-  border-radius: 98px;
-
-  background: linear-gradient(
-      0deg,
-      rgba(156, 190, 143, 0.7),
-      rgba(156, 190, 143, 0.7)
-    ),
-    #d9d9d9;
-  box-shadow: 0px 5.26027px 19.726px rgba(10, 136, 23, 0.25);
-}
-
-.buy-now__img {
-  position: absolute;
-  top: -50%;
-
-  width: 131;
-  height: 131;
-  border-radius: 98px;
-
-  box-shadow: 0px 5.26027px 19.726px rgba(153, 114, 23, 0.25);
 }
 
 .buy-now__itemtext {

@@ -13,9 +13,11 @@
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
-  max-width: 280px;
+  width: calc(100% - 52px);
+  max-width: 428px;
   min-height: 365px;
-  padding: 26px;
+  padding-top: 26px;
+  padding-bottom: 26px;
   background-color: $primary-white-color;
   border-radius: 10px;
   border: 2px solid $main-accent-color;
@@ -47,8 +49,9 @@
 
 .our-locations-modal__iframe {
   margin-bottom: 24px;
-  width: 225px;
-  height: 200px;
+  width: calc(100% - 52px);
+  max-width: 428px;
+  height: 199px;
   border-radius: 10px;
   border-color: transparent;
 }
@@ -72,6 +75,10 @@
   &:hover,
   &:focus {
     background-color: $active-btn-color;
+  }
+
+  &:active {
+    color: $primary-white-color;
   }
 }
 

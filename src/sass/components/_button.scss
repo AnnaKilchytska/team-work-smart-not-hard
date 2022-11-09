@@ -106,9 +106,17 @@
 .read-more-btn {
   @extend %yellow-button;
   column-gap: 4.85px;
+  margin-top: 20px;
+  margin-right: auto;
+  margin-left: auto;
 
   &:focus .btn-icon {
     stroke: $primary-white-color;
+  }
+
+  @media screen and (min-width: 768px) {
+    margin-left: 0;
+    margin-top: 40px;
   }
 }
 .locations-btn {

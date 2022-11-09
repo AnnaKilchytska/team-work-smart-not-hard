@@ -5,17 +5,48 @@
   background-size: 480px;
 }
 
+@media screen and (min-device-pixel-ratio: 2),
+  screen and (min-resolution: 192dpi),
+  screen and (min-resolution: 2dppx) {
+  .products {
+    background-image: url(../images/products/products-background-mobile-1@2x.png);
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .products {
+    background-image: url(../images/products/products-background-tablet-1@2x.png);
+    background-size: cover;
+  }
+}
+@media screen and (min-device-pixel-ratio: 2) and (min-width: 768px),
+  screen and (min-resolution: 192dpi) and (min-width: 768px),
+  screen and (min-resolution: 2dppx) and (min-width: 768px) {
+  .products {
+    background-image: url(../images/products/products-background-tablet-1@2x.png);
+    background-size: cover;
+  }
+}
+
 .products__suptitle {
   margin-bottom: 12px;
 }
 
 .products__title {
   margin-bottom: 148px;
+
+  @media screen and (min-width: 768px) {
+    margin-bottom: 200px;
+  }
 }
 
 .products-list {
   margin-right: auto;
   margin-left: auto;
+  @media screen and (min-width: 768px) {
+    display: flex;
+    flex-direction: row;
+  }
 }
 
 .products-list__item {
@@ -28,7 +59,13 @@
 
   margin-right: auto;
   margin-left: auto;
-  margin-bottom: 164px;
+
+  &:not(:last-child) {
+    margin-bottom: 164px;
+    @media screen and (min-width: 768px) {
+      margin-bottom: 0;
+    }
+  }
 
   padding-top: 123px;
   padding-bottom: 15px;
@@ -40,6 +77,17 @@
   border-radius: 24px;
 
   background-color: $additional-bg-color-2;
+
+  @media screen and (min-width: 768px) {
+    padding-top: 108px;
+    padding-bottom: 15px;
+    padding-left: 26px;
+    padding-right: 26px;
+
+    max-width: 224px;
+    height: 428px;
+    gap: 16px;
+  }
 }
 
 .products-list__item:first-child {
@@ -100,7 +148,7 @@
 .products-list__title {
   margin-bottom: 40px;
 
-  font-family: 'Montserrat';
+  font-family: 'Montserrat', sans-serif;
   font-weight: 700;
   font-size: 20px;
   line-height: 1.2em;
@@ -109,10 +157,15 @@
   text-transform: uppercase;
 
   color: $primary-black-color;
+
+  @media screen and (min-width: 768px) {
+    font-size: 22px;
+    line-height: 1.23em;
+  }
 }
 
 .products-list__descr {
-  font-family: 'Montserrat';
+  font-family: 'Montserrat', sans-serif;
   font-weight: 400;
   font-size: 14px;
   line-height: 1.76em;
@@ -136,8 +189,14 @@
   width: 40px;
   height: 15px;
 
-  &:hover {
-    stroke-width: 2px;
+  .products-list__button:hover & {
+    transform: scale(1.25, 1);
+    cursor: pointer;
+  }
+
+  .products-list__button:focus & {
+    transform: scale(1.25);
+    // stroke-width: 2px;
     cursor: pointer;
   }
 }

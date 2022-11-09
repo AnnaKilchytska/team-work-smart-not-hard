@@ -1,0 +1,109 @@
+.advantages-list {
+    @media screen and (min-width: 768px) {
+        display: flex;
+        flex-wrap: wrap;
+        margin: -40px;
+    }
+
+    @media screen and (min-width: 768px) {
+        margin: -15px;
+    }
+}
+
+.advantages-list__item {
+    @media screen and (max-width: 767px) {
+        &:not(:last-child) {
+        margin-bottom: 27px;
+        }
+    }
+
+    @media screen and (min-width: 768px) {
+        width: calc((100% - 3* 80px) / 3);
+        margin: 40px;
+        margin-top: 0;
+    }
+
+    @media screen and (min-width: 1200px) {
+        width: calc((100% - 3* 32px) / 3);
+        margin: 15px;
+        margin-top: 0;
+    }
+}
+
+.advantages-list__item::before {
+    content: '';
+    display: block;
+    height: 51px;
+    margin-bottom: 16px;
+
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 50px 51px;
+}
+
+.advantages-list__item:nth-child(1)::before {
+    background-image: url('../images/advantages/cow.png');
+}
+
+@media (min-device-pixel-ratio: 2),
+    (-webkit-min-device-pixel-ratio: 2),
+    (min-resolution: 192dpi),
+    (min-resolution: 2dppx) {
+    .advantages-list__item:nth-child(1)::before  {
+        background-image: url('../images/advantages/cow@2x.png');
+    }
+}
+
+.advantages-list__item:nth-child(2)::before {
+    background-image: url('../images/advantages/weight.png');
+}
+
+@media (min-device-pixel-ratio: 2),
+    (-webkit-min-device-pixel-ratio: 2),
+    (min-resolution: 192dpi),
+    (min-resolution: 2dppx) {
+    .advantages-list__item:nth-child(2)::before  {
+        background-image: url('../images/advantages/weight@2x.png');
+    }
+}
+
+.advantages-list__item:nth-child(3)::before {
+    background-image: url('../images/advantages/ice-cream.png');
+}
+
+@media (min-device-pixel-ratio: 2),
+    (-webkit-min-device-pixel-ratio: 2),
+    (min-resolution: 192dpi),
+    (min-resolution: 2dppx) {
+    .advantages-list__item:nth-child(3)::before  {
+        background-image: url('../images/advantages/ice-cream@2x.png');
+    }
+}
+
+.advantages-list__title {
+    margin-bottom: 18px;
+
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 1.17;
+
+    text-align: center;
+    letter-spacing: 0.04em;
+    text-transform: uppercase;
+
+    color: #FCFCFC;
+}
+
+.advantages-list__text {
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 12px;
+    line-height: 1.67;
+
+    text-align: center;
+
+    color: #FCFCFC;
+}

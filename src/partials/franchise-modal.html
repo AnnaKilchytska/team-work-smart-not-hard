@@ -1,5 +1,5 @@
 <div class="backdrop is-hidden" data-modal-franchise>
-  <div class="our-locations-modal">
+  <div class="franchise-modal">
     <button
       type="button"
       class="franchise-modal__close-btn"
@@ -12,21 +12,43 @@
     <p class="franchise-modal__title">
       Thank you for your interest in owning an Ice Cream shop
     </p>
-    <p>
+    <p class="franchise-modal__text">
       Due to the overwhelming volume of franchise requests we are not accepting
       new franchisee applications at this time. Once the application process
       resumes, we will contact you for further information. Please fill out the
       contact information below and we will reach out for additional
       information. We appreciate your patience.
     </p>
-    <form>
-      <ul>
-        <li></li>
-        <li></li>
-        <li></li>
-        <li></li>
-        <button type="submit">Submit</button>
-      </ul>
+    <form class="franchise-modal__form">
+      <label class="franchise-modal__field">
+        <input
+          type="text"
+          class="franchise-modal__input"
+          name="user_name"
+          placeholder="Name"
+        />
+      </label>
+      <label class="franchise-modal__field">
+        <input
+          type="tel"
+          class="franchise-modal__input"
+          name="user_tel"
+          placeholder="Phone"
+        />
+      </label>
+      <label class="franchise-modal__field">
+        <input
+          type="email"
+          class="franchise-modal__input"
+          name="user_email"
+          placeholder="Email"
+        />
+      </label>
+      <label class="franchise-modal__field">
+        <textarea class="franchise-modal__message" placeholder="Comment">
+        </textarea>
+      </label>
+      <button type="submit">Submit</button>
     </form>
   </div>
 </div>

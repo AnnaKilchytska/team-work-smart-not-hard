@@ -6,6 +6,7 @@
       font-size: 12px;
       margin-left: auto;
       margin-right: auto;
+      margin-bottom: 32px;
       width: 280px;
       font-size: 12px;
   }
@@ -13,10 +14,12 @@
   @media screen and (min-width: 768px) {
   display: flex;
   column-gap: 16px;
+  margin-bottom: 60px;
   font-size: 14px;
   }
 
   @media screen and (min-width: 1200px) {
+    margin-bottom: 64px;
     column-gap: 32px;
     font-size: 16px;
   }
@@ -118,6 +121,15 @@
   }
 }
 
+.contacts__shedule-item:not(:last-child) {
+  margin-bottom: 8px;
+  @media screen and (min-width: 768px) {
+      margin-bottom: 12px;
+    }
+}
+
+
+
 .contacts__time {
    @media screen and (max-width: 767px), (min-width: 1200px){
     color: $additional-text-color-1;
@@ -132,4 +144,15 @@
   @media screen and (min-width: 768px) {
     line-height: 1.83;
   }
+}
+
+.contacts__buttons {
+  display:flex;
+  @media screen and (max-width: 767px) {
+      flex-direction: column;
+      align-items: center;
+      row-gap: 16px;
+  }
+column-gap: 16px;
+justify-content: center;
 }

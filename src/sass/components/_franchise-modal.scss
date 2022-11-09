@@ -14,7 +14,7 @@
   left: 50%;
   transform: translate(-50%, -50%);
   max-width: 280px;
-  // min-height: 365px;
+  min-height: 674px;
   padding: 26px;
   background-color: $primary-white-color;
   border-radius: 10px;
@@ -40,15 +40,16 @@
 }
 
 .franchise-modal__title {
+  margin-bottom: 20px;
   font-family: 'Seymour One', sans-serif;
   line-height: 1.5;
-  margin-bottom: 20px;
 }
 
 .franchise-modal__text {
   margin-bottom: 24px;
   font-size: 14px;
   line-height: 1.4;
+  text-align: left;
 }
 
 .franchise-modal__field {
@@ -60,9 +61,99 @@
 }
 
 .franchise-modal__input {
+  padding-left: 12px;
   width: 224px;
   height: 32px;
+  font-size: 12px;
+  line-height: 1.4;
   background: $modal-input-bg-color;
   border: 1px solid $modal-green-border-color;
   border-radius: 10px;
+}
+
+.franchise-modal__message {
+  padding-left: 12px;
+  width: 224px;
+  height: 64px;
+  resize: none;
+}
+
+.franchise-modal__submit {
+  margin-left: auto;
+  margin-right: auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 114px;
+  height: 42px;
+  background-color: $main-accent-color;
+  border-radius: 10px;
+  font-weight: 600;
+  font-size: 12px;
+  line-height: 1.25;
+  color: $primary-black-color;
+  transition: background-color $cubic;
+
+  &:hover,
+  &:focus {
+    background-color: $active-btn-color;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .franchise-modal {
+    max-width: 568px;
+    min-height: 668px;
+    padding: 30px 58px;
+  }
+
+  .franchise-modal__close-btn {
+    top: 20px;
+    right: 20px;
+  }
+
+  .franchise-modal__close-icon {
+    width: 20px;
+    height: 20px;
+  }
+
+  .franchise-modal__title {
+    margin-bottom: 24px;
+    width: 322px;
+    font-size: 20px;
+    line-height: 1.4;
+  }
+
+  .franchise-modal__text {
+    margin-bottom: 32px;
+    font-size: 16px;
+  }
+
+  .franchise-modal__field {
+    margin-bottom: 16px;
+
+    &:last-child {
+      margin-bottom: 32px;
+    }
+  }
+
+  .franchise-modal__input {
+    padding-left: 16px;
+    width: 368px;
+    height: 42px;
+    font-size: 14px;
+    line-height: 1.4;
+  }
+
+  .franchise-modal__message {
+    padding-left: 16px;
+    width: 368px;
+    height: 84px;
+  }
+
+  .franchise-modal__submit {
+    width: 121px;
+    font-size: 14px;
+    line-height: 1.21;
+  }
 }

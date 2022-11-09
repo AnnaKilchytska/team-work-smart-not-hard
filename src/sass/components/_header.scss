@@ -32,7 +32,7 @@
   display: none;
 }
 
-.header__buy-now-btn {
+button.header__buy-now-btn {
   display: none;
 }
 
@@ -55,7 +55,7 @@
     margin-right: auto;
   }
 
-  .header__buy-now-btn {
+  button.header__buy-now-btn {
     display: block;
     margin-left: 32px;
   }
@@ -110,7 +110,7 @@
     display: none;
   }
 
-  .header__buy-now-btn {
+  button.header__buy-now-btn {
     margin-left: 0;
   }
 }

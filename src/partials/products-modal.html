@@ -1,0 +1,87 @@
+<div class="modal-products">
+  <button class="modal-ingredients__close-btn">
+    <svg
+      class="modal-ingredients__close-icon"
+      width="20"
+      height="20"
+      aria-label="кнопка закриття"
+    >
+      <use href="./images/icons.svg#icon-btn-close"></use>
+    </svg>
+  </button>
+  <h1 class="modal-products__title">Chololate icecream</h1>
+  <ul class="modal-products-nutritients">
+    <li class="modal-products-nutritients__item">kcal</li>
+    <li class="modal-products-nutritients__item">Prote...</li>
+    <li class="modal-products-nutritients__item">Fats</li>
+    <li class="modal-products-nutritients__item">Carbs</li>
+  </ul>
+  <ul class="modal-products-quantity">
+    <li class="modal-products-quantity__item">320</li>
+    <li class="modal-products-quantity__item">4g</li>
+    <li class="modal-products-quantity__item">8,2g</li>
+    <li class="modal-products-quantity__item">40,4g</li>
+  </ul>
+
+  <h2 class="modal-products-quantity">Ingredients</h2>
+  <ul class="modal-products-ingredients">
+    <li class="modal-products-ingredients__item">
+      <span>Milk</span><span>100ml</span>
+    </li>
+    <li class="modal-products-ingredients__item">
+      <span>Belgian chocolate</span><span>20g</span>
+    </li>
+    <li class="modal-products-ingredients__item">
+      <span>Cream</span><span>150 ml</span>/li>
+    </li>
+    <li class="modal-products-ingredients__item">
+      <span>Cocoa powder</span><span>30g</span>
+    </li>
+    <li class="modal-products-ingredients__item">
+      <span>Sugar</span><span>40g</span>
+    </li>
+    <li class="modal-products-ingredients__item">
+      <span>Vanilla sugar</span><span>10g</span>
+    </li>
+  </ul>
+  <form>
+    <ul>
+      <li>
+        <label for="user-name" class="modal-products__label">Ім'я</label>
+        <input
+          type="text"
+          name="user-name"
+          class="modal__input modal__input_narrow"
+          required
+          pattern="[a-zA-Zа-яА-яіІїЇєЄ']+"
+          title="Олег"
+          id="user-name"
+          autocomplete="off"
+        />
+      </li>
+      <li class="modal__item">
+        <label for="user-phone" class="modal__label">Телефон</label>
+        <input
+          type="tel"
+          name="user-phone"
+          class="modal__input modal__input_narrow"
+          required
+          id="user-phone"
+          autocomplete="off"
+        />
+      </li>
+
+      <li class="modal__item">
+        <label for="user-message" class="modal__label">Коментар</label>
+        <textarea
+          name="user-message"
+          class="modal__input modal__input_wide"
+          placeholder="Введіть текст"
+          id="user-message"
+          autocomplete="off"
+        ></textarea>
+      </li>
+    </ul>
+    <button type="submit" class="submit-btn">Відправити</button>
+  </form>
+</div>

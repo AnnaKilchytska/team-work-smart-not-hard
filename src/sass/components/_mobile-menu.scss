@@ -16,13 +16,13 @@
 
   background-color: $mobile-menu-bg-color;
 
-  transform: translateX(100%);
-  transition: transform $cubic;
+  // transform: translateX(100%);
+  // transition: transform $cubic;
   
   
-  &.is-open {  
-  transform: translateX(0);
-  }
+  // &.is-open {  
+  // transform: translateX(0);
+  // }
 
   @media screen and (min-width: 768px) {
    padding-top: 140px; 

@@ -39,6 +39,14 @@
     background-repeat: no-repeat;
     background-position: center;
     background-size: 50px 51px;
+
+    @media screen and (min-width: 768px) {
+        margin-bottom: 32px;
+    }
+
+    @media screen and (min-width: 768px) {
+        margin-bottom: 40px;
+    }
 }
 
 .advantages-list__item:nth-child(1)::before {
@@ -91,12 +99,30 @@
 
     text-align: center;
     letter-spacing: 0.04em;
-    text-transform: uppercase;
 
     color: $primary-white-color;
+
+    @media screen and (max-width: 767px) {
+        text-transform: uppercase;
+    }
+
+    @media screen and (min-width: 768px) {
+        font-family: 'Montserrat';
+        font-size: 48px;
+        line-height: 1.23;
+    }
+
+    @media screen and (min-width: 1200px) {
+        font-family: 'Montserrat';
+        font-size: 58px;
+        line-height: 1.22;
+    }
 }
 
 .advantages-list__text {
+    margin-left: auto;
+    margin-right: auto;
+
     font-family: 'Montserrat';
     font-style: normal;
     font-weight: 700;
@@ -106,4 +132,22 @@
     text-align: center;
 
     color: $primary-white-color;
+
+    @media screen and (max-width: 767px) {
+        max-width: 230px;
+    }
+
+    @media screen and (min-width: 768px) {
+        max-width: 152px;
+        font-weight: 400;
+        font-size: 14px;
+        line-height: 1.74;
+            }
+
+    @media screen and (min-width: 1200px) {
+        max-width: 368px;
+        font-size: 16px;
+        line-height: 1.76;
+        letter-spacing: 0.02em;
+    }
 }

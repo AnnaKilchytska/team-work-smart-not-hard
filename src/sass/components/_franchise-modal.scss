@@ -13,9 +13,10 @@
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
-  width: 280px;
-  min-height: 674px;
-  padding: 26px;
+  width: calc(100% - 50px);
+  max-width: 430px;
+  padding-top: 26px;
+  padding-bottom: 26px;
   background-color: $primary-white-color;
   border-radius: 10px;
   border: 2px solid $main-accent-color;
@@ -46,12 +47,18 @@
   display: flex;
   justify-content: center;
   align-items: center;
+  width: calc(100% - 55px);
+  max-width: 300px;
   font-family: 'Seymour One', sans-serif;
   line-height: 1.5;
 }
 
 .franchise-modal__text {
   margin-bottom: 24px;
+  margin-left: auto;
+  margin-right: auto;
+  width: calc(100% - 54px);
+  max-width: 300px;
   font-size: 14px;
   line-height: 1.4;
   text-align: left;
@@ -59,8 +66,12 @@
 
 .franchise-modal__input {
   margin-bottom: 12px;
+  padding-top: 0;
+  padding-right: 0;
+  padding-bottom: 0;
   padding-left: 12px;
-  width: 224px;
+  width: calc(100% - 52px);
+  max-width: 300px;
   height: 32px;
   font-size: 12px;
   line-height: 1.4;
@@ -75,8 +86,12 @@
 
 .franchise-modal__message {
   margin-bottom: 24px;
+  padding-top: 8px;
+  padding-right: 0;
+  padding-bottom: 0;
   padding-left: 12px;
-  width: 224px;
+  width: calc(100% - 52px);
+  max-width: 300px;
   height: 64px;
   resize: none;
   font-size: 12px;
@@ -115,7 +130,7 @@
 
 @media screen and (min-width: 768px) {
   .franchise-modal {
-    width: 568px;
+    max-width: 568px;
     min-height: 668px;
     padding: 30px 58px;
   }
@@ -132,20 +147,22 @@
 
   .franchise-modal__title {
     margin-bottom: 24px;
-    width: 322px;
+    max-width: 322px;
     font-size: 20px;
     line-height: 1.4;
   }
 
   .franchise-modal__text {
     margin-bottom: 32px;
+    width: 100%;
+    max-width: 448px;
     font-size: 16px;
   }
 
   .franchise-modal__input {
     margin-bottom: 16px;
     padding-left: 16px;
-    width: 368px;
+    max-width: 368px;
     height: 42px;
     font-size: 14px;
     line-height: 1.4;
@@ -153,9 +170,9 @@
 
   .franchise-modal__message {
     margin-bottom: 32px;
-    padding-left: 16px;
     padding-top: 11px;
-    width: 368px;
+    padding-left: 16px;
+    max-width: 368px;
     height: 84px;
     font-size: 14px;
   }

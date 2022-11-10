@@ -4,10 +4,7 @@
 
   @media screen and (max-width: 767px) {
       font-size: 12px;
-      margin-left: auto;
-      margin-right: auto;
       margin-bottom: 32px;
-      width: 280px;
       font-size: 12px;
   }
 
@@ -56,26 +53,40 @@
 }
 
 .contacts__agency {
-  display: inline-block;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
   line-height: 1.86;
   letter-spacing: 0.04em;
   background-color: $main-accent-color;
 
   @media screen and (max-width: 767px) {
+    min-width: 80px;
+    height: 16px;
     margin-bottom: 20px;
-    padding-left: 24px;
-    padding-right: 24px;
     border-radius: 4px;
   }
 
   @media screen and (min-width: 768px) {
+    min-width: 73px;
+    height: 28px;
     margin-bottom: 32px;
-    padding-left: 14px;
-    padding-right: 14px;
     border-radius: 6px;
     font-size: 16px;
   }
 }
+
+.contacts__agency--truck {
+  @media screen and (max-width: 767px) {
+      min-width: 130px;
+    }
+  
+    @media screen and (min-width: 768px) {
+      min-width: 138px;
+   }
+}
+
+
 
 
 .contacts__city {

@@ -34,6 +34,7 @@
   justify-content: center;
   background-color: $primary-white-color;
   border: none;
+  cursor: pointer;
 }
 
 .our-locations-modal__close-icon {
@@ -49,8 +50,10 @@
 
 .our-locations-modal__iframe {
   margin-bottom: 24px;
-  width: calc(100% - 52px);
-  max-width: 428px;
+  margin-left: auto;
+  margin-right: auto;
+  display: block;
+  width: calc(100% - 48px);
   height: 199px;
   border-radius: 10px;
   border-color: transparent;
@@ -62,7 +65,7 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  width: 142px;
+  width: 134px;
   height: 42px;
   background-color: $main-accent-color;
   border-radius: 10px;
@@ -86,7 +89,8 @@
   .our-locations-modal {
     max-width: 568px;
     min-height: 458px;
-    padding: 30px 58px;
+    padding-top: 58px;
+    padding-bottom: 58px;
   }
 
   .our-locations-modal__close-btn {
@@ -107,7 +111,7 @@
 
   .our-locations-modal__iframe {
     margin-bottom: 32px;
-    width: 448px;
+    width: calc(100% - 112px);
     height: 260px;
   }
 

@@ -13,10 +13,12 @@
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
-  width: calc(100% - 50px);
-  max-width: 430px;
   padding-top: 26px;
   padding-bottom: 26px;
+  width: calc(100% - 50px);
+  max-width: 430px;
+  max-height: 100vh;
+  overflow-y: scroll;
   background-color: $primary-white-color;
   border-radius: 10px;
   border: 2px solid $main-accent-color;

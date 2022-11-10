@@ -1,4 +1,20 @@
 .modal-products {
+  position: absolute;
+  top: 20%;
+  left: 50%;
+  transform: translate(-50%, 10%);
+  transition: opacity $cubic, visibility $cubic, transform $cubic;
+}
+
+.modal-products.is-hidden {
+  opacity: 0;
+  visibility: hidden;
+  pointer-events: none;
+
+  transform: translate(-50%, -10%);
+}
+
+.modal-products__container {
   position: relative;
   margin-left: auto;
   margin-right: auto;
@@ -9,6 +25,7 @@
 
   height: 990px;
 
+  background-color: #f5f5f5;
   border: 2px solid $main-accent-color;
   border-radius: 10px;
 }
@@ -17,6 +34,10 @@
   position: absolute;
   top: 28px;
   right: 20px;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
   padding: 0;
   background-color: transparent;
   border: none;
@@ -214,19 +235,23 @@
 
 @media screen and (max-width: 479px) {
   .modal-products {
+    transition: opacity $cubic, visibility $cubic;
+  }
+
+  .modal-products__container {
     width: 100%;
     max-width: 280px;
   }
 }
 
 @media screen and (min-width: 480px) and (max-width: 767px) {
-  .modal-products {
+  .modal-products__container {
     width: 280px;
   }
 }
 
 @media screen and (min-width: 768px) {
-  .modal-products {
+  .modal-products__container {
     width: 568px;
     height: 995px;
     padding-top: 32px;
@@ -280,43 +305,3 @@
     align-items: center;
   }
 }
-
-// @media screen and (max-width: 479px) {
-//   .modal-products {
-//     transition: transform var(--transition-dur-func);
-//   }
-// }
-
-// @media screen and (min-width: 480px) {
-//   .modal-products {
-//     top: 50%;
-//     left: 50%;
-//     transform: translate(-50%, -50%) scale(1);
-//     transition: transform var(--transition-dur-func);
-
-//     width: 100%;
-//     max-width: 450px;
-//   }
-// }
-// @media screen and (min-width: 1200px) {
-//   .modal-products {
-//     width: 100%;
-//     max-width: 528px;
-//   }
-// }
-
-// .modal-products.is-hidden {
-//   opacity: 0;
-//   visibility: hidden;
-//   pointer-events: none;
-// }
-
-// position: absolute;
-//   top: 50%;
-//   left: 50%;
-//   transform: translate(-50%, -50%);
-//   width: 528px;
-//   height: 580px;
-//   background-color: rgb(255, 255, 255);
-//   padding: 44px;
-// }

@@ -76,11 +76,13 @@ a {
 }
 
 @media screen and (min-width: 768px) {
+
   .section--products {
     padding-bottom: 82px;
   }
 }
 @media screen and (min-width: 1200px) {
+
   .section--products {
     padding-bottom: 66px;
   }
@@ -450,4 +452,65 @@ a {
     font-size: 14px;
     line-height: 1.21;
   }
+  
+  
+@media screen and (min-width: 768px) {
+  advantages-list {
+    display: flex;
+    flex-wrap: wrap;
+    margin: -40px;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .advantages-list__item:not(:last-child) {
+    margin-bottom: 27px;
+  }
+}
+@media screen and (min-width: 768px) {
+  .advantages-list__item {
+    width: calc((100% - 240px) / 3);
+    margin: 40px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .advantages-list__item {
+    width: calc((100% - 96px) / 3);
+    margin: 15px;
+  }
+}
+
+.advantages-list__item::before {
+  content: "";
+  display: block;
+  height: 50px;
+  margin-bottom: 16px;
+  background-image: url("../../images/advantages/cow.png");
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.advantages-list__title {
+  margin-bottom: 18px;
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 1.17;
+  text-align: center;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+  color: #FCFCFC;
+}
+
+.advantages-list__text {
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 12px;
+  line-height: 1.67;
+  text-align: center;
+  color: #FCFCFC;
+
 }/*# sourceMappingURL=main.css.map */

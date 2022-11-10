@@ -51,6 +51,7 @@
   max-width: 300px;
   font-family: 'Seymour One', sans-serif;
   line-height: 1.5;
+  color: $primary-black-color;
 }
 
 .franchise-modal__text {
@@ -62,6 +63,7 @@
   font-size: 14px;
   line-height: 1.4;
   text-align: left;
+  color: $primary-black-color;
 }
 
 .franchise-modal__input {
@@ -108,6 +110,7 @@
 .franchise-modal__submit {
   margin-left: auto;
   margin-right: auto;
+  padding: 0;
   display: flex;
   justify-content: center;
   align-items: center;

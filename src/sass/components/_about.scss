@@ -15,6 +15,8 @@
   position: relative;
   width: 278.19px;
   height: 278.25px;
+  margin-right: auto;
+  margin-left: auto;
   background: linear-gradient(
       0deg,
       rgba(248, 210, 78, 0.7),
@@ -75,11 +77,9 @@
   }
 }
 .section--about__box {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-
   @media screen and (min-width: 768px) {
+    display: flex;
+    align-items: center;
     justify-content: center;
     flex-direction: row;
     column-gap: 32px;
@@ -95,6 +95,8 @@
   line-height: 1.75;
   color: $primary-white-color;
   letter-spacing: 0.04em;
+  margin-right: auto;
+  margin-left: auto;
 
   @media screen and (min-width: 768px) {
     width: 334px;
@@ -110,7 +112,7 @@
 .section--about__text:first-child {
   margin-bottom: 3.83px;
 }
-.section--about__text:not(:last-child) {
+.section--about__text:not(:last-of-type) {
   @media screen and (min-width: 768px) {
     margin-bottom: 8px;
   }

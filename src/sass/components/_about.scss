@@ -15,8 +15,6 @@
   position: relative;
   width: 278.19px;
   height: 278.25px;
-  margin-right: auto;
-  margin-left: auto;
   background: linear-gradient(
       0deg,
       rgba(248, 210, 78, 0.7),
@@ -77,10 +75,13 @@
   }
 }
 .section--about__box {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
   @media screen and (min-width: 768px) {
-    display: flex;
     justify-content: center;
-    align-items: center;
+    flex-direction: row;
     column-gap: 32px;
   }
   @media screen and (min-width: 1200px) {
@@ -90,8 +91,6 @@
 .section--about__text {
   width: 220px;
   text-align: center;
-  margin-right: auto;
-  margin-left: auto;
   font-size: 12px;
   line-height: 1.75;
   color: $primary-white-color;

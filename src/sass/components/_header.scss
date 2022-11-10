@@ -1,6 +1,6 @@
 //page header styles
 .pg-header {
-  padding: 12px 0px;
+  padding-top: 12px;
 
   background-color: $main-bg-color;
 }
@@ -56,7 +56,7 @@ button.header__buy-now-btn {
   }
 
   button.header__buy-now-btn {
-    display: block;
+    display: flex;
     margin-left: 32px;
   }
 }
@@ -95,7 +95,7 @@ button.header__buy-now-btn {
     color: $primary-white-color;
     font-weight: 700;
     font-size: 16px;
-    line-height: 20px;
+    line-height: 1.25;
     text-decoration: none;
     transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 

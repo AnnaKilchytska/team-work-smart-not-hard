@@ -4,7 +4,7 @@
   left: 0;
   z-index: 9999;
   width: 100vw;
-  height: 100vh;
+  min-height: 100vh;
 
   display: flex;
   align-items: center;
@@ -109,7 +109,8 @@
     width: 131px;
     height: 131px;
     border-radius: 98px;
-    background-size: cover;
+    background-size: 102%;
+    background-position: center;
     overflow: hidden;
 
     box-shadow: 0px 5.26027px 19.726px rgba(153, 114, 23, 0.25);
@@ -259,7 +260,9 @@
 textarea.buy-now__input {
   resize: none;
   margin-bottom: 24px;
+  height: 65px;
 }
+/*************************/
 
 //media for buy now modal window
 //tablet and laptop
@@ -271,6 +274,15 @@ textarea.buy-now__input {
   .buy-now__window {
     width: 568px;
     max-height: 100vh;
+    padding: 32px;
+  }
+
+  .buy-now__close-button {
+    top: 20px;
+    right: 20px;
+
+    width: 20px;
+    height: 20px;
   }
 
   .buy-now__title {
@@ -291,14 +303,18 @@ textarea.buy-now__input {
     margin-bottom: 16px;
     padding: 11px 16px;
 
+    &,
     &::placeholder {
       font-size: 14px;
     }
   }
-}
 
-textarea.buy-now__input {
-  margin-bottom: 32px;
+  textarea.buy-now__input {
+    margin-bottom: 32px;
+    height: 84px;
+  }
+
+  /*******************/
 }
 
 .is-hidden {

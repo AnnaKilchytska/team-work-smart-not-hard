@@ -18,7 +18,7 @@
   width: calc(100% - 50px);
   max-width: 430px;
   max-height: 100vh;
-  overflow-y: scroll;
+  overflow-y: auto;
   background-color: $primary-white-color;
   border-radius: 10px;
   border: 2px solid $main-accent-color;
@@ -136,7 +136,6 @@
 @media screen and (min-width: 768px) {
   .franchise-modal {
     max-width: 568px;
-    min-height: 668px;
     padding: 30px 58px;
   }
 

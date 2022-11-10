@@ -35,6 +35,7 @@
   justify-content: center;
   background-color: $primary-white-color;
   border: none;
+  cursor: pointer;
 }
 
 .franchise-modal__close-icon {
@@ -126,6 +127,7 @@
   line-height: 1.25;
   color: $primary-black-color;
   transition: background-color $cubic;
+  cursor: pointer;
 
   &:hover,
   &:focus {

@@ -80,8 +80,9 @@
   column-gap: 18px;
   background-color: transparent;
   margin-top: 14px;
+  height: 12px;
   @media screen and (min-width:480px) {
-    height: 12px;
+    
     margin-top: 32px;
   }
 }

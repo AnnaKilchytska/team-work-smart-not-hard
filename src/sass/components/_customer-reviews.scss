@@ -7,11 +7,11 @@
   border-radius: 50%;
   margin-bottom: 32px;
   @media screen and (min-width: 768px) {
-   margin-bottom: 28px;
+    margin-bottom: 28px;
   }
 
   @media screen and (min-width: 1200px) {
-  margin-bottom: 32px;
+    margin-bottom: 32px;
   }
 }
 
@@ -25,7 +25,7 @@
   margin: 0 auto;
   padding: 34px 39px;
 
-  @media screen and (min-width:480px){
+  @media screen and (min-width: 480px) {
     width: 440px;
   }
   @media screen and (min-width: 768px) {
@@ -44,7 +44,6 @@
     padding: 43px 109px;
     border-radius: 24px;
   }
-  
 }
 
 .review__name {
@@ -60,19 +59,17 @@
   }
 }
 
-
 //Scroll styles
-.slider{
+.slider {
   margin-left: auto;
   margin-right: auto;
 }
-.slider .slider__item{
+.slider .slider__item {
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
   text-align: center;
-  
 }
 .slider .slick-dots {
   display: flex;
@@ -80,15 +77,15 @@
   column-gap: 18px;
   background-color: transparent;
   margin-top: 14px;
-  @media screen and (min-width:480px) {
-    height: 12px;
+  height: 12px;
+  @media screen and (min-width: 480px) {
     margin-top: 32px;
   }
 }
-.slider .slick-dots li.slick-active button{
-  background-color:$main-bg-color;
+.slider .slick-dots li.slick-active button {
+  background-color: $main-bg-color;
 }
-.slider .slick-dots button{
+.slider .slick-dots button {
   font-size: 0;
   width: 12px;
   height: 12px;
@@ -97,7 +94,7 @@
   border: none;
   background-color: $slider-bg-color;
 }
-.slick-track{
+.slick-track {
   display: flex;
   align-items: flex-start;
 }

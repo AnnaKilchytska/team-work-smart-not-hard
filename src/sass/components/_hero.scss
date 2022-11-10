@@ -1,23 +1,37 @@
 .hero {
   background-color: $main-bg-color;
   padding-top: 60px;
-  height: 379px;
+  //   height: 379px;
 
   @media screen and (min-width: 768px) {
     padding-top: 38px;
     padding-bottom: 0;
-    height: 348px;
+    // height: 348px;
   }
 
   @media screen and (min-width: 1200px) {
-    background-image: url(../images/hero/points-hero-desk.svg);
-    background-repeat: no-repeat;
-    background-size: contain;
-    background-position: 0px 230px;
+    // background-image: url(../images/hero/points-hero-desk.svg);
+    // background-repeat: no-repeat;
+    // background-size: contain;
+    // background-position: 0px 230px;
     padding-top: 40px;
-    height: 586px;
+    // height: 586px;
+    position: relative;
+    // max-width: 1200px;
+    min-height: 664px;
+    background-color: #84a178;
   }
 }
+
+// .image-background {
+//   position: absolute;
+//   left: 0;
+//   bottom: 0;
+
+//   /* щоб зображення було гумове  */
+//   width: 100%;
+//   height: auto;
+// }
 
 .hero__title {
   font-family: 'Seymour One', sans-serif;

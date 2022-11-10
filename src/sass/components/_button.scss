@@ -1,0 +1,215 @@
+%button {
+  border-radius: 10px;
+  color: $primary-black-color;
+  font-weight: 600;
+  cursor: pointer;
+}
+%yellow-button {
+  @extend %button;
+  border: none;
+  background-color: $main-accent-color;
+  transition: background-color $cubic, color $cubic;
+
+  &:hover {
+    background-color: $active-btn-color;
+  }
+  &:focus {
+    color: $primary-white-color;
+    background-color: $active-btn-color;
+    outline: none;
+  }
+  &:disabled {
+    background-color: $additional-text-color-1;
+  }
+}
+
+.products-btn {
+  @extend %button;
+  font-size: 8px;
+  line-height: 1.25;
+  border: 2px solid $main-accent-color;
+  width: 62px;
+  height: 24px;
+  padding: 0;
+  background-color: transparent;
+  transition: border-color $cubic, color $cubic;
+
+  &:hover {
+    border-color: $active-btn-color;
+  }
+  &:focus {
+    color: $primary-white-color;
+    border-color: $active-btn-color;
+    outline: none;
+  }
+  &:disabled {
+    border-color: $additional-text-color-1;
+  }
+
+  @media screen and (min-width: 1200px) {
+    font-size: 14px;
+    line-height: 1.29;
+    width: 134px;
+    height: 42px;
+  }
+}
+.production {
+  font-weight: 600;
+  font-size: 8px;
+  line-height: 1.25;
+  text-decoration: underline;
+  background-color: transparent;
+  border: none;
+  color: $main-accent-color;
+  border-radius: 10px;
+  width: 82.8px;
+  height: 24px;
+  padding: 0;
+  transition: color $cubic;
+  cursor: pointer;
+
+  &:hover {
+    color: $active-btn-color;
+  }
+  &:focus {
+    color: $primary-white-color;
+  }
+  &:disabled {
+    color: $additional-text-color-1;
+  }
+
+  @media screen and (min-width: 1200px) {
+    font-size: 14px;
+    line-height: 1.21;
+    width: 154px;
+    height: 40px;
+  }
+}
+.btn-icon {
+  stroke: $primary-black-color;
+  transition: stroke $cubic;
+}
+.buy-now-btn {
+  @extend %yellow-button;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  column-gap: 7.23px;
+  font-size: 14px;
+  line-height: 1.21;
+  width: 152px;
+  height: 42px;
+
+  &:focus .btn-icon {
+    stroke: $primary-white-color;
+  }
+}
+.read-more-btn {
+  @extend %yellow-button;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  column-gap: 4.85px;
+
+  font-size: 14px;
+  line-height: 1.29;
+  width: 164px;
+  height: 42px;
+
+
+  margin-top: 20px;
+  margin-right: auto;
+  margin-left: auto;
+
+
+  &:focus .btn-icon {
+    stroke: $primary-white-color;
+  }
+
+  @media screen and (min-width: 768px) {
+    margin-left: 0;
+    margin-top: 48px;
+  }
+}
+.locations-btn {
+  @extend %yellow-button;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  column-gap: 6.02px;
+  font-size: 14px;
+  line-height: 1.29;
+  width: 196px;
+  height: 42px;
+
+  &:focus .btn-icon {
+    stroke: $primary-white-color;
+  }
+}
+
+.franchise-btn {
+  @extend %button;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  column-gap: 5.73;
+  font-size: 14px;
+  line-height: 1.29;
+  background-color: transparent;
+  border: 2px solid $main-accent-color;
+  width: 196px;
+  height: 42px;
+  transition: border-color $cubic, color $cubic;
+
+  &:hover {
+    border-color: $active-btn-color;
+  }
+  &:focus {
+    color: $primary-white-color;
+    border-color: $active-btn-color;
+    outline: none;
+  }
+  &:focus .btn-icon {
+    stroke: $primary-white-color;
+  }
+  &:disabled {
+    border-color: $additional-text-color-1;
+  }
+}
+.submit-btn {
+  @extend %yellow-button;
+  font-size: 12px;
+  line-height: 1.25;
+  width: 114px;
+  height: 42px;
+
+  @media screen and (min-width: 768px) {
+    font-size: 14px;
+    line-height: 1.21;
+    width: 121px;
+  }
+}
+.map-btn {
+  @extend %yellow-button;
+  font-size: 12px;
+  line-height: 1.25;
+  width: 134px;
+  height: 42px;
+
+  @media screen and (min-width: 768px) {
+    font-size: 14px;
+    line-height: 1.21;
+    width: 145px;
+  }
+}
+.submit-ingredients-btn {
+  @extend %yellow-button;
+  font-size: 14px;
+  line-height: 1.21;
+  width: 132px;
+  height: 42px;
+
+  @media screen and (min-width: 768px) {
+    width: 121px;
+  }
+}

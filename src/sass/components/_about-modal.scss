@@ -23,8 +23,7 @@
 
   max-width: 280px;
   min-height: 449px;
-  padding: 28px 28px;
-  text-align: center;
+  padding: 26px 26px;
 
   background-color: $primary-white-color;
   border-radius: 10px;
@@ -56,14 +55,16 @@
 
 .about-modal__title {
   font-family: 'Seymour One', sans-serif;
-  line-height: 1.4;
+  line-height: 1.5;
   margin-bottom: 20px;
   color: $primary-black-color;
+  text-align: center;
 }
 
 .about-modal__video {
   width: 224;
   height: 199px;
+  border-radius: 10px;
 }
 
 .about-modal__text {
@@ -71,13 +72,14 @@
   font-size: 14px;
   line-height: 1.42;
   margin-top: 20px;
+  text-align: left;
 }
 
 @media screen and (min-width: 768px) {
   .about-modal {
     position: absolute;
     max-width: 568px;
-    padding: 32px 60px;
+    padding: 30px 58px;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);

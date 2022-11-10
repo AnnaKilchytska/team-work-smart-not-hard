@@ -20,7 +20,7 @@
 
 .buy-now__window {
   position: relative;
-  overflow-y: scroll;
+  overflow-y: auto;
 
   display: flex;
   flex-direction: column;

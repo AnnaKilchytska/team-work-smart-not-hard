@@ -1,17 +1,26 @@
-<div class="mobile-menu" data-menu>
+<div class="mobile-menu js-menu-container">
   <div class="container mobile-menu__container">
     <picture class="logo-image">
       <source
         media="(min-width: 768px)"
-        srcset="./images/logo-tab.png 1x, ./images/logo-tab@2x.png 2x"
+        srcset="
+          ./images/mobile-menu-images/logo-tab.png    1x,
+          ./images/mobile-menu-images/logo-tab@2x.png 2x
+        "
       />
       <source
         media="(max-width: 767px)"
-        srcset="./images/logo-mobile.png 1x, ./images/logo-mobile@2x.png 2x"
+        srcset="
+          ./images/mobile-menu-images/logo-mobile.png    1x,
+          ./images/mobile-menu-images/logo-mobile@2x.png 2x
+        "
       />
-      <img src="./images/logo-mobile.png" alt="логотип компанії" />
+      <img
+        src="./images/mobile-menu-images/logo-mobile.png"
+        alt="логотип компанії"
+      />
     </picture>
-    <button class="mobile-menu__close-btn" data-menu-close>
+    <button class="mobile-menu__close-btn js-close-menu">
       <svg
         class="mobile-menu__close-icon"
         width="32"

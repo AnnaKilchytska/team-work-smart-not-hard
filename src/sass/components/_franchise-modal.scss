@@ -8,6 +8,12 @@
   transition: opacity $cubic, visibility $cubic;
 }
 
+.backdrop.is-hidden {
+  visibility: none;
+  opacity: 0;
+  pointer-events: none;
+}
+
 .franchise-modal {
   position: absolute;
   top: 50%;

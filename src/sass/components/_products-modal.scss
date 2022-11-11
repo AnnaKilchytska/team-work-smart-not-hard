@@ -80,6 +80,25 @@
   }
 }
 
+.modal-products__title-first::after {
+  background: linear-gradient(0deg, $gradient-bg-color-1, $gradient-bg-color-1),
+    $slider-bg-color;
+  box-shadow: 0px 5.26027px 19.726px rgba(10, 136, 23, 0.25);
+  border-radius: 50%;
+}
+
+.modal-products__title-second::after {
+  background: linear-gradient(
+    0deg,
+    $gradient-bg-color-2,
+    $gradient-bg-color-2,
+    $slider-bg-color
+  );
+
+  box-shadow: 0px 8px 30px rgba(153, 114, 23, 0.25);
+  border-radius: 50%;
+}
+
 .modal-products-useful {
   position: relative;
   margin-bottom: 39px;
@@ -100,11 +119,13 @@
   height: 131px;
 
   border-radius: 50%;
-  background-image: url('../images/modal-ingredients-images/products-modal-image1-mob.jpg');
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
+}
 
+.modal-products-useful_first::before {
+  background-image: url('../images/modal-ingredients-images/products-modal-image1-mob.jpg');
   @media screen and (min-device-pixel-ratio: 2) and (max-width: 767px),
     screen and (min-resolution: 192dpi) and (max-width: 767px),
     screen and (min-resolution: 2dppx) and (max-width: 767px) {
@@ -119,6 +140,16 @@
     screen and (min-resolution: 192dpi) and (min-width: 768px),
     screen and (min-resolution: 2dppx) and (min-width: 768px) {
     background-image: url('../images/modal-ingredients-images/products-modal-image1-tab@2x.jpg');
+  }
+}
+
+.modal-products-useful_second::before {
+  background-image: url('../images/modal-ingredients-images/products-modal-image2.jpg');
+
+  @media screen and (min-device-pixel-ratio: 2),
+    screen and (min-resolution: 192dpi),
+    screen and (min-resolution: 2dppx) {
+    background-image: url('../images/modal-ingredients-images/products-modal-image2@2x.jpg');
   }
 }
 
@@ -141,9 +172,16 @@
   line-height: 1.2;
 
   color: $primary-black-color;
-
   border: 2px solid $modal-indicators-bg-color;
   border-radius: 40px;
+}
+
+.modal-products-useful__nutrients_first {
+  border: 2px solid $modal-indicators-bg-color;
+}
+
+.modal-products-useful__nutrients_second {
+  border: 2px solid $gradient-bg-color-2;
 }
 
 .modal-products-useful__quantity {
@@ -161,11 +199,19 @@
   font-weight: 500;
   font-size: 10px;
   line-height: 2.8;
+  border-radius: 50%;
+}
 
+.modal-products-useful__quantity_first {
   background: $modal-indicators-bg-color;
   border: 2px solid $modal-indicators-bg-color;
-  border-radius: 50%;
   box-shadow: 0px 6px 20px rgba(10, 136, 23, 0.25);
+}
+
+.modal-products-useful__quantity_second {
+  background: $gradient-bg-color-2;
+  border: 2px solid $gradient-bg-color-2;
+  box-shadow: 0px 6px 20px rgba(153, 114, 23, 0.25);
 }
 
 .modal-products__subtitle {
@@ -199,6 +245,7 @@
 
 .modal-products-form {
   margin-bottom: 32px;
+  text-align: center;
 }
 
 .modal-products-form__item:not(:last-child) {
@@ -207,13 +254,21 @@
 
 .modal-products-form__input {
   width: 100%;
+  max-width: 384px;
   padding-top: 11px;
   padding-bottom: 11px;
   padding-left: 10px;
 
   background: rgba(248, 210, 78, 0.1);
-  border: 1px solid $main-bg-color;
   border-radius: 10px;
+}
+
+.modal-products-form__input_first {
+  border: 1px solid $main-bg-color;
+}
+
+.modal-products-form__input_second {
+  border: 1px solid $main-accent-color;
 }
 
 .modal-products-form__input_narrow {

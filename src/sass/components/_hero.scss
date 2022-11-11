@@ -2,37 +2,18 @@
   background-color: $main-bg-color;
   padding-top: 60px;
   position: relative;
-  //   height: 379px;
 
   @media screen and (min-width: 768px) {
     padding-top: 38px;
     padding-bottom: 0;
-    // height: 348px;
   }
 
   @media screen and (min-width: 1200px) {
-    // background-image: url(../images/hero/points-hero-desk.svg);
-    // background-repeat: no-repeat;
-    // background-size: contain;
-    // background-position: 0px 230px;
     padding-top: 40px;
-    // height: 586px;
-    //position: relative;
-    // max-width: 1200px;
-    //min-height: 664px;
+
     background-color: #84a178;
   }
 }
-
-// .image-background {
-//   position: absolute;
-//   left: 0;
-//   bottom: 0;
-
-//   /* щоб зображення було гумове  */
-//   width: 100%;
-//   height: auto;
-// }
 
 .hero__title {
   font-family: 'Seymour One', sans-serif;
@@ -43,7 +24,7 @@
   font-size: 26px;
   color: $primary-white-color;
   max-width: 247px;
-  margin-bottom: 32px;
+  // margin-bottom: 32px;
 
   &--emphasized {
     display: inline-block;
@@ -60,7 +41,7 @@
     &--emphasized {
       line-height: 0.82;
       font-size: 24px;
-      @media screen and (min-width: 1200px){
+      @media screen and (min-width: 1200px) {
         max-width: 367px;
         font-size: 38px;
         line-height: 1.26;
@@ -86,24 +67,42 @@
   }
 }
 
-.statistics {
+.statistics__number {
+  font-weight: 900;
+  font-size: 28px;
+  line-height: 1.21;
+  text-align: right;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+  color: $primary-black-color;
 
+  @media screen and (min-width: 1200px) {
+    font-size: 46px;
+  }
+}
+
+.statistics__unit {
+  font-weight: 400;
+  font-size: 8px;
+  line-height: 1.25;
+  text-align: right;
+  color: $primary-white-color;
+
+  @media screen and (min-width: 1200px) {
+    font-size: 14px;
+    line-height: 1.21;
+  }
+}
+
+.statistics {
   @media screen and (max-width: 767px) {
     display: none;
-  }
-  &__item {
-  }
-
-  &__number {
-  }
-
-  &__unit {
   }
 }
 
 .buttons-list {
   display: flex;
-  //margin-bottom: 32px;
+  margin-top: 20px;
   @media screen and (max-width: 767px) {
     padding-bottom: 239px;
   }
@@ -113,7 +112,28 @@
   }
 
   @media screen and (min-width: 1200px) {
+    margin-top: 32px;
     margin-bottom: 42px;
+  }
+}
+
+.hero-btn.products-btn {
+  padding: 8px 18px;
+  margin-right: 8px;
+
+  @media screen and (min-width: 1200px) {
+    padding: 12px 34px;
+    margin-right: 34px;
+  }
+}
+
+.hero-btn.production {
+  // cursor: pointer;
+  outline: none;
+  padding: 8px 18px;
+
+  @media screen and (min-width: 1200px) {
+    padding: 12px 34px;
   }
 }
 
@@ -124,21 +144,14 @@
 
   @media screen and (max-width: 767px) {
     display: none;
-
   }
   @media screen and (min-width: 768px) {
-     margin-bottom: 13px;
+    margin-bottom: 13px;
   }
   @media screen and (min-width: 1200px) {
     column-gap: 14px;
     margin-bottom: 65px;
   }
-}
-
-.info__item {
-  //   @media screen and (min-width: 768px) and (max-width: 1199px) {
-  //     flex-basis: 152px;
-  //   }
 }
 
 .info__text {
@@ -197,10 +210,8 @@
   }
 }
 
-//Mороженка 
+//Mороженка
 .image-thumb {
-  //   background: rgba(252, 252, 252, 0.44);
-  //   filter: blur(50px);
   animation-name: animApear;
   animation-duration: 1.5s;
   animation-timing-function: ease-in-out;
@@ -213,26 +224,38 @@
   right: 0;
   bottom: 0;
   height: 219px;
+
   background-image: url('../images/hero/iceCreamFace.svg'),url('../images/hero/iceCreamBody.png'),url('../images/hero/iceCreamDotsRight.svg'),url('../images/hero/iceCreamDotsLeft.svg');
   background-position:center, center,  bottom right, bottom left;
   @media screen and (min-width:480px) {
     width: 480px;
   }
   @media screen and (min-width:768px) {
+
+  background-image: url('../images/hero/iceCreamFace.svg'),
+    url('../images/hero/iceCreamBody.png'),
+    url('../images/hero/iceCreamDotsRight.svg'),
+    url('../images/hero/iceCreamDotsLeft.svg');
+  background-position: center, center, bottom right, bottom left;
+  @media screen and (min-width: 768px) {
+
     height: 324.92px;
-    width: 768px ;
-    background-image:url('../images/hero/iceCreamFaceTab.svg'), url('../images/hero/iceCreamBodyTab.png'),url('../images/hero/iceCreamDotsRightTab.svg'),
-    url('../images/hero/iceCreamDotsLeftTab.svg');
-    background-position: 83% 0 , 82%,  bottom right, bottom left;
+    width: 768px;
+    background-image: url('../images/hero/iceCreamFaceTab.svg'),
+      url('../images/hero/iceCreamBodyTab.png'),
+      url('../images/hero/iceCreamDotsRightTab.svg'),
+      url('../images/hero/iceCreamDotsLeftTab.svg');
+    background-position: 83% 0, 82%, bottom right, bottom left;
   }
-  @media screen and (min-width:1200px) {
+  @media screen and (min-width: 1200px) {
     height: 561px;
-    width: 1200px ;
-    background-image:url('../images/hero/iceCreamFacePC.svg'), url('../images/hero/iceCreamBodyPC.png'),url('../images/hero/DotsPC.svg');
-  background-position: 85% 100% , 82%,  bottom ;
+    width: 1200px;
+    background-image: url('../images/hero/iceCreamFacePC.svg'),
+      url('../images/hero/iceCreamBodyPC.png'), url('../images/hero/DotsPC.svg');
+    background-position: 85% 100%, 82%, bottom;
   }
 }
-.image-thumb-shine{
+.image-thumb-shine {
   animation-timing-function: ease-in-out;
   margin-left: auto;
   margin-right: auto;
@@ -240,115 +263,87 @@
   height: 218.27px;
   position: absolute;
   bottom: 0;
-  background-image: linear-gradient( rgba(252, 252, 252, 0.44) , rgba(252, 252, 252, 0.44) 100%);
+  background-image: linear-gradient(
+    rgba(252, 252, 252, 0.44),
+    rgba(252, 252, 252, 0.44) 100%
+  );
   filter: blur(50px);
-   left: 0;
+  left: 0;
   right: 0;
-  animation-name:blurShineIceCream,animApear ;
+  animation-name: blurShineIceCream, animApear;
   animation-timing-function: ease-in-out, ease-in-out;
-  animation-duration: 1.5s,1.5s;
-  animation-iteration-count: infinite,1;
+  animation-duration: 1.5s, 1.5s;
+  animation-iteration-count: infinite, 1;
   animation-direction: alternate, normal;
-  @media screen and (min-width:768px){
+  @media screen and (min-width: 768px) {
     width: 266.09px;
     height: 341.85px;
     transform: translateX(65%);
-
   }
-  @media screen and (min-width:1200px){
+  @media screen and (min-width: 1200px) {
     width: 477px;
     height: 589.64px;
-    filter: blur(100px); 
+    filter: blur(100px);
     transform: translateX(58%);
   }
-  
 }
 @keyframes blurShineIceCream {
-    0%{
-      opacity: 0;
-    }
-    100%{
-      opacity: 1;
-    }
-}
-@keyframes animApear {
-  0%{
+  0% {
     opacity: 0;
   }
-  100%{
+  100% {
     opacity: 1;
   }
 }
-@media screen and (min-device-pixel-ratio: 2) and (max-width:767px),
-  (-webkit-min-device-pixel-ratio: 2) and (max-width:767px),
-  (min-resolution: 192dpi) and (max-width:767px),
-  (min-resolution: 2dppx) and (max-width:767px) {
+@keyframes animApear {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+@media screen and (min-device-pixel-ratio: 2) and (max-width: 767px),
+  (-webkit-min-device-pixel-ratio: 2) and (max-width: 767px),
+  (min-resolution: 192dpi) and (max-width: 767px),
+  (min-resolution: 2dppx) and (max-width: 767px) {
   .image-thumb {
     height: 219px;
-    background-image: url('../images/hero/iceCreamFace.svg'),url('../images/hero/iceCreamBody@2.png'),url('../images/hero/iceCreamDotsRight.svg'),url('../images/hero/iceCreamDotsLeft.svg');
-    background-position:center, center,  bottom right, bottom left;
-    background-size: auto,contain,auto,auto;
+    background-image: url('../images/hero/iceCreamFace.svg'),
+      url('../images/hero/iceCreamBody@2.png'),
+      url('../images/hero/iceCreamDotsRight.svg'),
+      url('../images/hero/iceCreamDotsLeft.svg');
+    background-position: center, center, bottom right, bottom left;
+    background-size: auto, contain, auto, auto;
   }
 }
-@media screen and (min-device-pixel-ratio: 2) and (min-width:768px),
-  (-webkit-min-device-pixel-ratio: 2) and (min-width:768px),
-  (min-resolution: 192dpi) and (min-width:768px),
-  (min-resolution: 2dppx) and (min-width:768px) {
+@media screen and (min-device-pixel-ratio: 2) and (min-width: 768px),
+  (-webkit-min-device-pixel-ratio: 2) and (min-width: 768px),
+  (min-resolution: 192dpi) and (min-width: 768px),
+  (min-resolution: 2dppx) and (min-width: 768px) {
   .image-thumb {
     height: 324.92px;
-    width: 768px ;
-    background-image:url('../images/hero/iceCreamFaceTab.svg'), url('../images/hero/iceCreamBodyTab@2.png'),url('../images/hero/iceCreamDotsRightTab.svg'),
-    url('../images/hero/iceCreamDotsLeftTab.svg');
-  background-position: 83% 0 , 82%,  bottom right, bottom left;
-  background-size: auto,contain,auto,auto;
+    width: 768px;
+    background-image: url('../images/hero/iceCreamFaceTab.svg'),
+      url('../images/hero/iceCreamBodyTab@2.png'),
+      url('../images/hero/iceCreamDotsRightTab.svg'),
+      url('../images/hero/iceCreamDotsLeftTab.svg');
+    background-position: 83% 0, 82%, bottom right, bottom left;
+    background-size: auto, contain, auto, auto;
   }
 }
-@media screen and (min-device-pixel-ratio: 2) and (min-width:1200px),
-  (-webkit-min-device-pixel-ratio: 2) and (min-width:1200px),
-  (min-resolution: 192dpi) and (min-width:1200px),
-  (min-resolution: 2dppx) and (min-width:1200px) {
+@media screen and (min-device-pixel-ratio: 2) and (min-width: 1200px),
+  (-webkit-min-device-pixel-ratio: 2) and (min-width: 1200px),
+  (min-resolution: 192dpi) and (min-width: 1200px),
+  (min-resolution: 2dppx) and (min-width: 1200px) {
   .image-thumb {
     height: 561px;
-    width: 1200px ;
-    background-image:url('../images/hero/iceCreamFacePC.svg'), url('../images/hero/iceCreamBodyPC@2.png'),url('../images/hero/DotsPC.svg');
-  background-position: 85% 100% , 82%,  bottom ;
-  background-size: auto,contain,auto,auto;
+    width: 1200px;
+    background-image: url('../images/hero/iceCreamFacePC.svg'),
+      url('../images/hero/iceCreamBodyPC@2.png'),
+      url('../images/hero/DotsPC.svg');
+    background-position: 85% 100%, 82%, bottom;
+    background-size: auto, contain, auto, auto;
   }
 }
 // кінець Mороженки
-
-
-
-.statistics__number {
-  font-weight: 900;
-  font-size: 28px;
-  line-height: 1.21;
-  text-align: right;
-  letter-spacing: 0.04em;
-  text-transform: uppercase;
-  color: $primary-black-color;
-
-  @media screen and (min-width: 1200px) {
-    font-size: 46px;
-  }
-}
-
-.statistics__unit {
-  font-weight: 400;
-  font-size: 8px;
-  line-height: 1.25;
-  text-align: right;
-  color: $primary-white-color;
-
-  @media screen and (min-width: 1200px) {
-    font-size: 14px;
-    line-height: 1.21;
-  }
-}
-
-.image-thumb {
-  //   position: absolute;
-}
-
-.statistics {
-}

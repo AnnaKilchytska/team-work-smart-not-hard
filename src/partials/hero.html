@@ -1,10 +1,8 @@
 <section id="hero" class="hero">
   <!--Мороженка-->
-  <div class="image-thumb-shine">
-   </div>
-  <div class="image-thumb">
-   </div>
-  <!---->
+  <div class="image-thumb-shine"></div>
+  <div class="image-thumb"></div>
+
   <div class="container">
     <div class="flex-container">
       <div class="flex-container__item">
@@ -14,35 +12,38 @@
         </h1>
         <ul class="buttons-list">
           <li class="buttons-list__item">
-            <button href="#products" type="button" class="products-btn">
-              Products
-            </button>
+            <a href="#products" class="hero-btn products-btn">Products</a>
           </li>
           <li class="buttons-list__item">
-            <button href="#about" type="button" class="production">
-              How it’s made?
-            </button>
+            <a href="#about" class="hero-btn production">How it’s made?</a>
           </li>
         </ul>
 
         <div class="info">
           <div class="info__item info__thumb">
             <picture>
-              <source srcset="./images/hero/TabPlate.png 152w, 
-              ./images/hero/TabPlate@2.png 304w"
-              media="(max-width: 1199px)"
-              sizes="(max-width: 1199px) 152w, 15vw">
-              <source srcset="./images/hero/PCPlate.png 225w, 
-              ./images/hero/PCPlate@2.png 550w"
-              media="(min-width: 1200px)"
-              sizes="(min-width: 1200px) 225w, 15vw">
+              <source
+                srcset="
+                  ./images/hero/TabPlate.png   152w,
+                  ./images/hero/TabPlate@2.png 304w
+                "
+                media="(max-width: 1199px)"
+                sizes="(max-width: 1199px) 152px"
+              />
+              <source
+                srcset="
+                  ./images/hero/PCPlate.png   225w,
+                  ./images/hero/PCPlate@2.png 550w
+                "
+                media="(min-width: 1200px)"
+                sizes="(min-width: 1200px) 225px"
+              />
               <img
-              src="./images/hero/TabPlate.png"
-              class="info__img"
-              alt="Тарілка з морозивом"
-            />
-          </picture>
-           
+                src="./images/hero/TabPlate.png"
+                class="info__img"
+                alt="Тарілка з морозивом"
+              />
+            </picture>
           </div>
           <div class="info__item info__descr">
             <p class="info__text">
@@ -57,10 +58,7 @@
           </div>
         </div>
       </div>
-    
-      <div class="right-side">
-
-       <!-- <div class="image-thumb__item"></div>-->
+      <div class="right-side flex-container__item">
         <ul class="statistics">
           <li class="statistics__item">
             <div class="statistics__number">16</div>
@@ -71,42 +69,7 @@
             <div class="statistics__unit">food trucks</div>
           </li>
         </ul>
-
-        <!-- <img class="image-background" src="./images/hero/dots-desk.png" /> -->
       </div>
     </div>
-
-    <!--  дів для картинок> -->
-    <!-- <div class="hero__decoration">
-      <img
-        class="hero__big-icecream"
-        src="./images/hero/ice-cream.png"
-        alt="ice cream"
-      />
-      <img
-        class="hero__many-icecreams"
-        src="./images/hero/many-icecreams.png"
-        alt="many ice creams"
-      />
-      <p class="hero__text">
-        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
-        tempor incididunt ut labore et
-      </p>
-    </div> -->
-
-    <!--  місця продажу> -->
-    <!--  крапки -мобілка-> -->
-    <!-- <svg class="hero__points--mobile"> -->
-
-    <!-- <use href="./images/hero/icons-hero.svg#icon-points-hero-mob"></use>
-    </svg> -->
-    <!--  крапки -планшет ліва-> -->
-    <!-- <svg class="hero__points--tablet">
-      <use href="./images/hero/icons-hero.svg#icon-points-hero-tab"></use>
-    </svg> -->
-
-    <!--  крапки -комп'ютер> -->
-
-    <!--  стрілка> -->
-  
+  </div>
 </section>

@@ -1,0 +1,48 @@
+<div class="buy-now is-hidden" js-buy-now-modal>
+  <div class="buy-now__window">
+    <button class="buy-now__close-button" type="button" js-buy-now-modal-close>
+      <svg class="buy-now__close-icon" width="16" height="16" data-modal-close>
+        <use href="./images/icons.svg#icon-btn-close"></use>
+      </svg>
+    </button>
+    <h3 class="buy-now__title">Buy now</h3>
+    <ul class="buy-now__productlist">
+      <li class="buy-now__listitem">
+        <p class="buy-now__itemtext">ice cream</p>
+      </li>
+      <li class="buy-now__listitem">
+        <p class="buy-now__itemtext">ice coffee</p>
+      </li>
+      <li class="buy-now__listitem">
+        <p class="buy-now__itemtext">milkshake</p>
+      </li>
+    </ul>
+    <form action="" class="buy-now__form">
+      <input
+        type="text"
+        name="customer-name"
+        id="customer-name"
+        class="buy-now__input"
+        placeholder="Name"
+        required
+        autofocus
+      />
+      <input
+        type="tel"
+        name="customer-phone"
+        id="customer-phone"
+        class="buy-now__input"
+        placeholder="Phone"
+        pattern="[0-9]{3}-[0-9]{3}-[0-9]{2}-[0-9]{2}"
+        title="Введіть правильно номер телефону: 111-111-11-11"
+        required
+      />
+      <textarea
+        class="buy-now__input"
+        name="customer-comment"
+        placeholder="Comment"
+      ></textarea>
+      <button type="submit" class="buy-now-btn submit-btn">Submit</button>
+    </form>
+  </div>
+</div>

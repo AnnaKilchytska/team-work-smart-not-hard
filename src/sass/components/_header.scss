@@ -1,0 +1,116 @@
+//page header styles
+.pg-header {
+  padding-top: 12px;
+
+  background-color: $main-bg-color;
+}
+
+.pg-header__container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.pg-header__logo-link {
+  width: 41px;
+  height: 37px;
+}
+
+.burger-menu__btn {
+  width: 32px;
+  height: 32px;
+  padding: 0;
+
+  background-color: transparent;
+  border: 0;
+  cursor: pointer;
+}
+.burger-menu__icon {
+  line-height: 32px;
+}
+.pg-header__nav {
+  display: none;
+}
+
+button.header__buy-now-btn {
+  display: none;
+}
+
+//media for page header
+//tablet
+@media screen and (min-width: 768px) {
+  .pg-header {
+    padding-bottom: 6px;
+    padding-top: 20px;
+  }
+
+  .pg-header__container {
+    align-items: center;
+  }
+
+  .pg-header__logo-link {
+    width: 48px;
+    height: 44px;
+
+    margin-right: auto;
+  }
+
+  button.header__buy-now-btn {
+    display: flex;
+    margin-left: 32px;
+  }
+}
+
+//laptop
+@media screen and (min-width: 1200px) {
+  .pg-header {
+    padding-bottom: 0px;
+    padding-top: 8px;
+  }
+
+  .pg-header__container {
+    align-items: flex-end;
+  }
+
+  .pg-header__logo-link {
+    width: 60px;
+    height: 65px;
+
+    margin-right: 0;
+  }
+
+  .pg-header__nav {
+    display: block;
+  }
+
+  .navigation__list {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 27px;
+    padding: 14px 0;
+  }
+
+  .navigation__link {
+    color: $primary-white-color;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 1.25;
+    text-decoration: none;
+    transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+    &:hover,
+    &:focus,
+    &:active {
+      color: $main-accent-color;
+    }
+  }
+
+  .burger-menu__btn {
+    display: none;
+  }
+
+  button.header__buy-now-btn {
+    margin-left: 0;
+  }
+}

@@ -19,7 +19,7 @@
     // height: 586px;
     //position: relative;
     // max-width: 1200px;
-    min-height: 664px;
+    //min-height: 664px;
     background-color: #84a178;
   }
 }
@@ -51,7 +51,7 @@
     font-weight: 34px;
   }
 
-  @media screen and (max-width: 767px) {
+  @media screen and (min-width: 768px) {
     max-width: 182px;
     line-height: 1.28;
     font-size: 18px;
@@ -60,6 +60,11 @@
     &--emphasized {
       line-height: 0.82;
       font-size: 24px;
+      @media screen and (min-width: 1200px){
+        max-width: 367px;
+        font-size: 38px;
+        line-height: 1.26;
+      }
     }
   }
 
@@ -82,6 +87,7 @@
 }
 
 .statistics {
+
   @media screen and (max-width: 767px) {
     display: none;
   }
@@ -97,7 +103,10 @@
 
 .buttons-list {
   display: flex;
-  margin-bottom: 32px;
+  //margin-bottom: 32px;
+  @media screen and (max-width: 767px) {
+    padding-bottom: 239px;
+  }
 
   @media screen and (min-width: 768px) {
     margin-bottom: 28px;
@@ -115,9 +124,11 @@
 
   @media screen and (max-width: 767px) {
     display: none;
-    margin-bottom: 13px;
-  }
 
+  }
+  @media screen and (min-width: 768px) {
+     margin-bottom: 13px;
+  }
   @media screen and (min-width: 1200px) {
     column-gap: 14px;
     margin-bottom: 65px;
@@ -156,7 +167,7 @@
 
 .info__descr {
   max-width: 152px;
-
+  align-self: flex-end;
   @media screen and (min-width: 1200px) {
     max-width: 200px;
   }
@@ -168,7 +179,7 @@
   @media screen and (min-width: 768px) {
     position: absolute;
     right: 0;
-    bottom: 0;
+    top: 0;
   }
 }
 
@@ -209,7 +220,7 @@
     width: 768px ;
     background-image:url('../images/hero/iceCreamFaceTab.svg'), url('../images/hero/iceCreamBodyTab.png'),url('../images/hero/iceCreamDotsRightTab.svg'),
     url('../images/hero/iceCreamDotsLeftTab.svg');
-  background-position: 83% 0 , 82%,  bottom right, bottom left;
+    background-position: 83% 0 , 82%,  bottom right, bottom left;
   }
   @media screen and (min-width:1200px) {
     height: 561px;

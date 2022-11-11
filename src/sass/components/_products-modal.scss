@@ -238,16 +238,10 @@
   margin-right: auto;
 }
 
-@media screen and (max-width: 479px) {
+@media screen and(max-width: 767px) {
   .modal-products {
     width: 100%;
-    max-width: 280px;
-  }
-}
-
-@media screen and (min-width: 480px) and (max-width: 767px) {
-  .modal-products {
-    width: 280px;
+    max-width: 480px;
   }
 }
 

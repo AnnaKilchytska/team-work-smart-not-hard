@@ -58,6 +58,8 @@ button.header__buy-now-btn {
   button.header__buy-now-btn {
     display: flex;
     margin-left: 32px;
+    position: relative;
+    z-index: 1;
   }
 }
 

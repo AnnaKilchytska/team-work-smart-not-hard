@@ -1,4 +1,10 @@
 <section id="hero" class="hero">
+  <!--Мороженка-->
+  <div class="image-thumb-shine">
+   </div>
+  <div class="image-thumb">
+   </div>
+  <!---->
   <div class="container">
     <div class="flex-container">
       <div class="flex-container__item">
@@ -21,11 +27,22 @@
 
         <div class="info">
           <div class="info__item info__thumb">
-            <img
-              src="./images/hero/hero-round-1x.jpg"
+            <picture>
+              <source srcset="./images/hero/TabPlate.png 152w, 
+              ./images/hero/TabPlate@2.png 304w"
+              media="(max-width: 1199px)"
+              sizes="(max-width: 1199px) 152w, 15vw">
+              <source srcset="./images/hero/PCPlate.png 225w, 
+              ./images/hero/PCPlate@2.png 550w"
+              media="(min-width: 1200px)"
+              sizes="(min-width: 1200px) 225w, 15vw">
+              <img
+              src="./images/hero/TabPlate.png"
               class="info__img"
               alt="Тарілка з морозивом"
             />
+          </picture>
+           
           </div>
           <div class="info__item info__descr">
             <p class="info__text">
@@ -40,15 +57,10 @@
           </div>
         </div>
       </div>
+    
+      <div class="right-side">
 
-      <div class="flex-container__item right-side">
-        <div class="image-thumb">
-          <img
-            src="./images/hero/big-ice-cream-hero.svg"
-            alt="ice-cream"
-            class="image"
-          />
-        </div>
+       <!-- <div class="image-thumb__item"></div>-->
         <ul class="statistics">
           <li class="statistics__item">
             <div class="statistics__number">16</div>
@@ -96,5 +108,5 @@
     <!--  крапки -комп'ютер> -->
 
     <!--  стрілка> -->
-  </div>
+  
 </section>

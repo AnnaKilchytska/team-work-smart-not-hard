@@ -70,24 +70,18 @@
     width: 132px;
     height: 132px;
 
-    background: linear-gradient(
-      0deg,
-      $gradient-bg-color-1,
-      $gradient-bg-color-1
-    );
-    box-shadow: 0px 5.26027px 19.726px rgba(10, 136, 23, 0.25);
     border-radius: 50%;
   }
 }
 
-.modal-products__title-first::after {
+.modal-products__title_first::after {
   background: linear-gradient(0deg, $gradient-bg-color-1, $gradient-bg-color-1),
     $slider-bg-color;
   box-shadow: 0px 5.26027px 19.726px rgba(10, 136, 23, 0.25);
   border-radius: 50%;
 }
 
-.modal-products__title-second::after {
+.modal-products__title_second::after {
   background: linear-gradient(
     0deg,
     $gradient-bg-color-2,
@@ -97,6 +91,12 @@
 
   box-shadow: 0px 8px 30px rgba(153, 114, 23, 0.25);
   border-radius: 50%;
+}
+
+.modal-products__title_third::after {
+  background: linear-gradient(0deg, $gradient-bg-color-3, $gradient-bg-color-3),
+    $slider-bg-color;
+  box-shadow: 0px 5.26027px 19.726px rgba(0, 0, 0, 0.25);
 }
 
 .modal-products-useful {
@@ -153,6 +153,16 @@
   }
 }
 
+.modal-products-useful_third::before {
+  background-image: url('../images/modal-ingredients-images/products-modal-image3.jpg');
+
+  @media screen and (min-device-pixel-ratio: 2),
+    screen and (min-resolution: 192dpi),
+    screen and (min-resolution: 2dppx) {
+    background-image: url('../images/modal-ingredients-images/products-modal-image3@2x.jpg');
+  }
+}
+
 .modal-products-useful__item {
   position: relative;
   display: flex;
@@ -172,7 +182,6 @@
   line-height: 1.2;
 
   color: $primary-black-color;
-  border: 2px solid $modal-indicators-bg-color;
   border-radius: 40px;
 }
 
@@ -182,6 +191,10 @@
 
 .modal-products-useful__nutrients_second {
   border: 2px solid $gradient-bg-color-2;
+}
+
+.modal-products-useful__nutrients_third {
+  border: 2px solid $additional-bg-color-3;
 }
 
 .modal-products-useful__quantity {
@@ -212,6 +225,12 @@
   background: $gradient-bg-color-2;
   border: 2px solid $gradient-bg-color-2;
   box-shadow: 0px 6px 20px rgba(153, 114, 23, 0.25);
+}
+
+.modal-products-useful__quantity_third {
+  background: $gradient-bg-color-3;
+  border: 2px solid $gradient-bg-color-3;
+  box-shadow: 0px 5.26027px 19.726px rgba(0, 0, 0, 0.25);
 }
 
 .modal-products__subtitle {
@@ -269,6 +288,10 @@
 
 .modal-products-form__input_second {
   border: 1px solid $main-accent-color;
+}
+
+.modal-products-form__input_third {
+  border: 1px solid $additional-bg-color-3;
 }
 
 .modal-products-form__input_narrow {

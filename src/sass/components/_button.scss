@@ -6,22 +6,17 @@
 }
 %yellow-button {
   @extend %button;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  font-size: 14px;
-  line-height: 1.28;
-  padding: 12px 34px;
   border: none;
   background-color: $main-accent-color;
-  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
-    color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: background-color $cubic, color $cubic;
 
   &:hover {
     background-color: $active-btn-color;
   }
   &:focus {
     color: $primary-white-color;
+    background-color: $active-btn-color;
+    outline: none;
   }
   &:disabled {
     background-color: $additional-text-color-1;
@@ -37,8 +32,7 @@
   height: 24px;
   padding: 0;
   background-color: transparent;
-  transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
-    color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: border-color $cubic, color $cubic;
 
   &:hover {
     border-color: $active-btn-color;
@@ -54,7 +48,7 @@
 
   @media screen and (min-width: 1200px) {
     font-size: 14px;
-    line-height: 1.28;
+    line-height: 1.29;
     width: 134px;
     height: 42px;
   }
@@ -71,7 +65,7 @@
   width: 82.8px;
   height: 24px;
   padding: 0;
-  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: color $cubic;
   cursor: pointer;
 
   &:hover {
@@ -93,11 +87,18 @@
 }
 .btn-icon {
   stroke: $primary-black-color;
-  transition: stroke 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: stroke $cubic;
 }
 .buy-now-btn {
   @extend %yellow-button;
+  display: flex;
+  justify-content: center;
+  align-items: center;
   column-gap: 7.23px;
+  font-size: 14px;
+  line-height: 1.21;
+  width: 152px;
+  height: 42px;
 
   &:focus .btn-icon {
     stroke: $primary-white-color;
@@ -105,15 +106,41 @@
 }
 .read-more-btn {
   @extend %yellow-button;
+  display: flex;
+  justify-content: center;
+  align-items: center;
   column-gap: 4.85px;
+
+  font-size: 14px;
+  line-height: 1.29;
+  width: 164px;
+  height: 42px;
+
+
+  margin-top: 20px;
+  margin-right: auto;
+  margin-left: auto;
+
 
   &:focus .btn-icon {
     stroke: $primary-white-color;
   }
+
+  @media screen and (min-width: 768px) {
+    margin-left: 0;
+    margin-top: 48px;
+  }
 }
 .locations-btn {
   @extend %yellow-button;
+  display: flex;
+  justify-content: center;
+  align-items: center;
   column-gap: 6.02px;
+  font-size: 14px;
+  line-height: 1.29;
+  width: 196px;
+  height: 42px;
 
   &:focus .btn-icon {
     stroke: $primary-white-color;
@@ -127,12 +154,12 @@
   align-items: center;
   column-gap: 5.73;
   font-size: 14px;
-  line-height: 1.28;
+  line-height: 1.29;
   background-color: transparent;
   border: 2px solid $main-accent-color;
-  padding: 12px 46px;
-  transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
-    color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  width: 196px;
+  height: 42px;
+  transition: border-color $cubic, color $cubic;
 
   &:hover {
     border-color: $active-btn-color;
@@ -147,5 +174,42 @@
   }
   &:disabled {
     border-color: $additional-text-color-1;
+  }
+}
+.submit-btn {
+  @extend %yellow-button;
+  font-size: 12px;
+  line-height: 1.25;
+  width: 114px;
+  height: 42px;
+
+  @media screen and (min-width: 768px) {
+    font-size: 14px;
+    line-height: 1.21;
+    width: 121px;
+  }
+}
+.map-btn {
+  @extend %yellow-button;
+  font-size: 12px;
+  line-height: 1.25;
+  width: 134px;
+  height: 42px;
+
+  @media screen and (min-width: 768px) {
+    font-size: 14px;
+    line-height: 1.21;
+    width: 145px;
+  }
+}
+.submit-ingredients-btn {
+  @extend %yellow-button;
+  font-size: 14px;
+  line-height: 1.21;
+  width: 132px;
+  height: 42px;
+
+  @media screen and (min-width: 768px) {
+    width: 121px;
   }
 }

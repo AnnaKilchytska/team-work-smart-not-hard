@@ -1,0 +1,261 @@
+// фон секції
+.products {
+  background-image: url(../images/products/products-background-mobile.png);
+  background-repeat: no-repeat;
+  background-position: center top;
+  background-size: cover;
+
+  @media screen and (min-device-pixel-ratio: 2),
+    screen and (min-resolution: 192dpi),
+    screen and (min-resolution: 2dppx) {
+    background-image: url(../images/products/products-background-mobile@2x.png);
+  }
+  @media screen and (min-width: 768px) {
+    background-image: url(../images/products/products-background-tablet.png);
+  }
+  @media screen and (min-device-pixel-ratio: 2) and (min-width: 768px),
+    screen and (min-resolution: 192dpi) and (min-width: 768px),
+    screen and (min-resolution: 2dppx) and (min-width: 768px) {
+    background-image: url(../images/products/products-background-tablet@2x.png);
+  }
+
+  @media screen and (min-width: 1200px) {
+    background-image: url(../images/products/products-background-desktop.png);
+  }
+
+  @media screen and (min-device-pixel-ratio: 2) and (min-width: 1200px),
+    screen and (min-resolution: 192dpi) and (min-width: 1200px),
+    screen and (min-resolution: 2dppx) and (min-width: 1200px) {
+    background-image: url(../images/products/products-background-desktop@2x.png);
+    background-size: cover;
+  }
+}
+
+// заголовки секції
+.products__suptitle {
+  margin-bottom: 12px;
+}
+
+.products__title {
+  margin-bottom: 148px;
+
+  @media screen and (min-width: 768px) {
+    margin-bottom: 200px;
+  }
+
+  @media screen and (min-width: 1200px) {
+    margin-bottom: 303px;
+  }
+}
+
+// список карток
+.products-list {
+  margin-right: auto;
+  margin-left: auto;
+  @media screen and (min-width: 768px) {
+    display: flex;
+    flex-direction: row;
+    gap: 16px;
+  }
+  @media screen and (min-width: 1200px) {
+    display: flex;
+    flex-direction: row;
+    gap: 32px;
+  }
+}
+
+// картка продукту
+.products-list__item {
+  position: relative;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+
+  margin-right: auto;
+  margin-left: auto;
+
+  &:not(:last-child) {
+    margin-bottom: 164px;
+    @media screen and (min-width: 768px) {
+      margin-bottom: 0;
+    }
+  }
+
+  padding-top: 123px;
+  padding-bottom: 15px;
+  padding-left: 40px;
+  padding-right: 40px;
+
+  height: 420px;
+  border-radius: 24px;
+
+  background-color: $additional-bg-color-2;
+
+  @media screen and (min-width: 768px) {
+    padding-top: 108px;
+    padding-bottom: 15px;
+    padding-left: 26px;
+    padding-right: 26px;
+
+    max-width: 224px;
+    height: 428px;
+    // gap: 16px;
+  }
+
+  @media screen and (min-width: 1200px) {
+    padding-top: 166px;
+    padding-bottom: 55px;
+    padding-left: 64px;
+    padding-right: 64px;
+
+    max-width: 370px;
+    height: 535px;
+    // gap: 16px;
+  }
+}
+
+// перша картинка в кружечку
+.products-list__item:first-child {
+  background-color: $additional-bg-color-1;
+
+  &::before {
+    background-image: url(../images/products/ice-cream-product-mobile.jpg);
+
+    box-shadow: 0px 11px 0px #aec6a5, 0px 16px 20.0332px rgb(10 136 23 / 25%);
+
+    @media screen and (min-device-pixel-ratio: 2),
+      screen and (min-resolution: 192dpi),
+      screen and (min-resolution: 2dppx) {
+      background-image: url(../images/products/ice-cream-product-mobile@2x.jpg);
+    }
+    @media screen and (min-width: 1200px) {
+      box-shadow: 0px 17px 0px #aec6a5, 0px 16px 25px rgb(10 136 23 / 25%);
+    }
+  }
+}
+
+// третя картинка в кружечку
+.products-list__item:last-child {
+  background-color: $additional-bg-color-3;
+
+  &::before {
+    background-image: url(../images/products/milkshakes-product-mobile.jpg);
+
+    box-shadow: 0px 11px 0px #d6936d, 0px 16px 20.0332px rgba(0, 0, 0, 0.25);
+
+    @media screen and (min-device-pixel-ratio: 2),
+      screen and (min-resolution: 192dpi),
+      screen and (min-resolution: 2dppx) {
+      background-image: url(../images/products/milkshakes-product-mobile@2x.jpg);
+    }
+
+    @media screen and (min-width: 1200px) {
+      box-shadow: 0px 17px 0px #d6936d, 0px 16px 25px rgba(0, 0, 0, 0.25);
+    }
+  }
+}
+
+// загальні стилі для картинок в кружечку + друга картинка
+.products-list__item::before {
+  content: '';
+  position: absolute;
+  transform: translate(0%, -114%);
+  width: 200px;
+  height: 200px;
+  //   border: 1px solid black;
+  border-radius: 50%;
+
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 101%;
+
+  background-image: url(../images/products/ice-coffee-product-mobile.jpg);
+  box-shadow: 0px 11px 0px #efd478, 0px 16px 20.0332px rgba(153, 114, 23, 0.25);
+
+  @media screen and (min-device-pixel-ratio: 2),
+    screen and (min-resolution: 192dpi),
+    screen and (min-resolution: 2dppx) {
+    background-image: url(../images/products/ice-coffee-product-mobile@2x.jpg);
+  }
+
+  @media screen and (min-width: 1200px) {
+    width: 303px;
+    height: 303px;
+  }
+
+  @media screen and (min-width: 1200px) {
+    box-shadow: 0px 17px 0px #efd478, 0px 16px 25px rgba(153, 114, 23, 0.25);
+  }
+}
+
+// наповнення картки продукту
+.products-list__title {
+  margin-bottom: 40px;
+
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 1.2em;
+  text-align: center;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+
+  color: $primary-black-color;
+
+  @media screen and (min-width: 768px) {
+    font-size: 22px;
+    line-height: 1.23em;
+  }
+
+  @media screen and (min-width: 1200px) {
+    margin-bottom: 65px;
+
+    font-size: 30px;
+    line-height: 1.11em;
+  }
+}
+
+.products-list__descr {
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.76em;
+
+  text-align: center;
+  letter-spacing: 0.04em;
+
+  color: $primary-black-color;
+
+  @media screen and (min-width: 1200px) {
+    font-size: 16px;
+  }
+}
+
+// кнопка-стрілочка
+.products-list__button {
+  display: inline-flex;
+  margin: 0;
+  padding: 0;
+  border: none;
+  background-color: transparent;
+}
+
+.products-list__icon-arrow {
+  stroke: $primary-black-color;
+  width: 40px;
+  height: 15px;
+  transition: transform $cubic;
+
+  .products-list__button:hover & {
+    transform: scale(1.25, 1);
+    cursor: pointer;
+  }
+
+  .products-list__button:focus & {
+    transform: scale(1.25);
+    // stroke-width: 2px;
+    cursor: pointer;
+  }
+}

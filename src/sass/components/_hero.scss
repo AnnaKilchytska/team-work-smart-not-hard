@@ -1,6 +1,7 @@
 .hero {
   background-color: $main-bg-color;
   padding-top: 60px;
+  position: relative;
   //   height: 379px;
 
   @media screen and (min-width: 768px) {
@@ -188,9 +189,18 @@
 .image-thumb {
   //   background: rgba(252, 252, 252, 0.44);
   //   filter: blur(50px);
+
+  position: absolute;
   @media screen and (max-width: 767px) {
     margin-left: auto;
     margin-right: auto;
+    background-repeat: no-repeat;
+    width: 100%;
+    height: 219px;
+    position: relative;
+    //url('../images/hero/iceCreamFace.svg'),
+    background-image: url('../images/hero/iceCreamBody.png'),url('../images/hero/iceCreamDots.svg');
+    background-position: center,  bottom;
   }
 }
 

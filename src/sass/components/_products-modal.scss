@@ -18,9 +18,9 @@
 
 .modal-products {
   position: absolute;
+  top: 50%;
   left: 50%;
-  top: 10%;
-  transform: translateX(-50%);
+  transform: translate(-50%, -50%);
   transition: transform $cubic;
 
   padding-top: 38px;

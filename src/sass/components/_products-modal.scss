@@ -9,11 +9,11 @@
   overflow-y: scroll;
 }
 
-// .products-backdrop.is-hidden {
-//   opacity: 0;
-//   visibility: hidden;
-//   pointer-events: none;
-// }
+.products-backdrop.is-hidden {
+  opacity: 0;
+  visibility: hidden;
+  pointer-events: none;
+}
 
 .modal-products {
   position: absolute;

@@ -1,6 +1,10 @@
-<div class="buy-now is-hidden" js-buy-now-modal>
+<div class="buy-now backdrop is-hidden" data-buy-now-modal>
   <div class="buy-now__window">
-    <button class="buy-now__close-button" type="button" js-buy-now-modal-close>
+    <button
+      class="buy-now__close-button"
+      type="button"
+      data-buy-now-modal-close
+    >
       <svg class="buy-now__close-icon" width="16" height="16" data-modal-close>
         <use href="./images/icons.svg#icon-btn-close"></use>
       </svg>
@@ -17,7 +21,7 @@
         <p class="buy-now__itemtext">milkshake</p>
       </li>
     </ul>
-    <form action="" class="buy-now__form">
+    <form class="buy-now__form">
       <input
         type="text"
         name="customer-name"

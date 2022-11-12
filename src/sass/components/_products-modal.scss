@@ -7,6 +7,7 @@
   background-color: rgba(0, 0, 0, 0.2);
   transition: opacity $cubic, visibility $cubic;
   overflow-y: scroll;
+  z-index: 100;
 }
 
 .products-backdrop.is-hidden {
@@ -183,6 +184,8 @@
 
   color: $primary-black-color;
   border-radius: 40px;
+
+  border: 2px solid #9cbe8f;
 }
 
 .modal-products-useful__nutrients_first {

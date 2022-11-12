@@ -6,6 +6,7 @@
   height: 100%;
   background-color: rgba(0, 0, 0, 0.2);
   transition: opacity $cubic, visibility $cubic;
+  overflow-y: scroll;
 }
 
 .backdrop.is-hidden {
@@ -23,8 +24,8 @@
   padding-bottom: 26px;
   width: calc(100% - 50px);
   max-width: 430px;
-  max-height: 100vh;
-  overflow-y: auto;
+  // max-height: 100vh;
+
   background-color: $primary-white-color;
   border-radius: 10px;
   border: 2px solid $main-accent-color;

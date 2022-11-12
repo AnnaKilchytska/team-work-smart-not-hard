@@ -18,9 +18,9 @@
 
 .modal-products {
   position: absolute;
-  top: 50%;
   left: 50%;
-  transform: translate(-50%, -50%);
+  top: 10%;
+  transform: translateX(-50%);
   transition: transform $cubic;
 
   padding-top: 38px;
@@ -399,18 +399,6 @@
   .modal-products {
     .products-backdrop.is-hidden & {
       transform: translate(-50%, -10%);
-    }
-  }
-}
-
-@media screen and (min-width: 1200px) {
-  .modal-products {
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-
-    .products-backdrop.is-hidden & {
-      transform: translate(-50%, -50%);
     }
   }
 }

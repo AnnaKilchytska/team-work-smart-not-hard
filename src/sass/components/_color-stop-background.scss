@@ -1,0 +1,81 @@
+.color-stop-background {
+  background: linear-gradient(
+      to bottom,
+      $main-bg-color 1.5%,
+      transparent 1.5%,
+      transparent 48%,
+      $main-bg-color 48%
+    ),
+    url(../images/united-background/ice-cream-united-mob1x.jpg);
+}
+
+@media (min-device-pixel-ratio: 2),
+  (min-resolution: 192dpi),
+  (min-resolution: 2dppx) {
+  .color-stop-background {
+    background: linear-gradient(
+        to bottom,
+        $main-bg-color 1.5%,
+        transparent 1.5%,
+        transparent 48%,
+        $main-bg-color 48%
+      ),
+      url(../images/united-background/ice-cream-united-mob@2x.jpg);
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .color-stop-background {
+    background: linear-gradient(
+        to bottom,
+        $main-bg-color 11%,
+        transparent 11%,
+        transparent 74%,
+        $main-bg-color 74%
+      ),
+      url(../images/united-background/ice-cream-united-tab1x.jpg);
+  }
+
+  @media (min-device-pixel-ratio: 2),
+    (min-resolution: 192dpi),
+    (min-resolution: 2dppx) {
+    .color-stop-background {
+      background: linear-gradient(
+          to bottom,
+          $main-bg-color 11%,
+          transparent 11%,
+          transparent 74%,
+          $main-bg-color 74%
+        ),
+        url(../images/united-background/ice-cream-united-tab@2x.jpg);
+    }
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .color-stop-background {
+    background: linear-gradient(
+        to bottom,
+        $main-bg-color 5%,
+        transparent 5%,
+        transparent 64%,
+        $main-bg-color 64%
+      ),
+      url(../images/united-background/ice-cream-united-background1x.jpg);
+  }
+
+  @media (min-device-pixel-ratio: 2),
+    (min-resolution: 192dpi),
+    (min-resolution: 2dppx) {
+    .color-stop-background {
+      background: linear-gradient(
+          to bottom,
+          $main-bg-color 5%,
+          transparent 5%,
+          transparent 64%,
+          $main-bg-color 64%
+        ),
+        url(../images/united-background/ice-cream-united-background@2x.jpg);
+    }
+  }
+}

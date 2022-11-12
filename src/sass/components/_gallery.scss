@@ -48,79 +48,79 @@
 
 //only animation CSS
 @keyframes gallerryAnimFirstImg{
-    0%{
+   0%{
+      opacity: 100%;
+   }
+  25%{
+   opacity: 100%;
+  }
+  50%{
+   opacity: 0%;
+  }
+  75%{
+   opacity: 100%;
+  }
+  100%{
+   opacity: 100%;
+  }
+  }
+@keyframes gallerryAnimSecondImg{
+   0%{
+      opacity:0;
+   }
+   25%{
+      opacity: 100%;
+   }
+   50%{
+      opacity:100%;
+    }
+    75%{
+      opacity: 0;
+    }
+    100%{
+       opacity:0;
+    }
+  }
+  @keyframes gallerryAnimThirdImg{
+   0%{
+      opacity: 0;
+   }
+   25%{
+      opacity: 0;
+   }
+    50%{
        opacity: 100%;
     }
-    25%{
-       opacity: 0;
-       
+    75%{
+      opacity: 0;
     }
-     100%{
-        opacity:100%;
-     }
+    100%{
+       opacity:0;
+    }
+  }
+  @keyframes gallerryAnimFourthImg{
+   0%{
+      opacity: 0;
    }
-@keyframes gallerryAnimSecondImg{
-    0%{
-       opacity: 0;
-    }
-    25%{
-       opacity: 0;
-    }
-    25%{
-        opacity: 100%;
-     }
-     50%{
-        opacity: 0;
-     }
-     100%{
-        opacity:0;
-     }
+   
+   25%{
+      opacity: 0;
    }
-   @keyframes gallerryAnimThirdImg{
-    0%{
+    50%{
        opacity: 0;
     }
-    25%{
-       opacity: 0;
+    75%{
+      opacity: 100%;
     }
-    25%{
-        opacity: 0;
-     }
-     50%{
-        opacity: 100%;
-     }
-     75%{
-        opacity: 0;
-     }
-     100%{
-        opacity:0;
-     }
-   }
-   @keyframes gallerryAnimFourthImg{
-    0%{
-       opacity: 0;
+    100%{
+      opacity: 0;
     }
-    25%{
-       opacity: 0;
-    }
-    25%{
-        opacity: 0;
-     }
-     50%{
-        opacity: 0;
-     }
-     75%{
-        opacity: 100%;
-     }
-     100%{
-        opacity:0;
-     }
-   }
+  }
  
 .gallery__item:nth-child(1){
     animation-name: gallerryAnimFirstImg;
     animation-duration: 12s;
-    animation-direction: alternate;
+    animation-direction: normal;
     animation-timing-function:ease-in-out;
     animation-iteration-count: infinite;
 }
@@ -128,21 +128,22 @@
    
     animation-name: gallerryAnimSecondImg;
     animation-duration: 12s;
-    animation-direction: alternate;
+    animation-direction: normal;
     animation-timing-function: ease-in-out;
     animation-iteration-count: infinite;
 }
 .gallery__item:nth-child(3){
     animation-name: gallerryAnimThirdImg;
     animation-duration: 12s;
-    animation-direction: alternate;
-    animation-timing-function: ease-in-out;
+    animation-direction: normal;
+    animation-timing-function:ease-in-out;
     animation-iteration-count: infinite;
 }
 .gallery__item:nth-child(4){
     animation-name: gallerryAnimFourthImg;
     animation-duration: 12s;
-    animation-direction: alternate;
+    animation-direction:normal;
     animation-timing-function: ease-in-out;
     animation-iteration-count: infinite;
+
 }

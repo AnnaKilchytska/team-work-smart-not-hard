@@ -224,26 +224,38 @@
   right: 0;
   bottom: 0;
   height: 219px;
+
   background-image: url('../images/hero/iceCreamFace.svg'),
     url('../images/hero/iceCreamBody.png'),
     url('../images/hero/iceCreamDotsRight.svg'),
     url('../images/hero/iceCreamDotsLeft.svg');
   background-position: center, center, bottom right, bottom left;
-  @media screen and (min-width: 768px) {
-    height: 324.92px;
-    width: 768px;
-    background-image: url('../images/hero/iceCreamFaceTab.svg'),
-      url('../images/hero/iceCreamBodyTab.png'),
-      url('../images/hero/iceCreamDotsRightTab.svg'),
-      url('../images/hero/iceCreamDotsLeftTab.svg');
-    background-position: 83% 0, 82%, bottom right, bottom left;
+  @media screen and (min-width: 480px) {
+    width: 480px;
   }
-  @media screen and (min-width: 1200px) {
-    height: 561px;
-    width: 1200px;
-    background-image: url('../images/hero/iceCreamFacePC.svg'),
-      url('../images/hero/iceCreamBodyPC.png'), url('../images/hero/DotsPC.svg');
-    background-position: 85% 100%, 82%, bottom;
+  @media screen and (min-width: 768px) {
+    background-image: url('../images/hero/iceCreamFace.svg'),
+      url('../images/hero/iceCreamBody.png'),
+      url('../images/hero/iceCreamDotsRight.svg'),
+      url('../images/hero/iceCreamDotsLeft.svg');
+    background-position: center, center, bottom right, bottom left;
+    @media screen and (min-width: 768px) {
+      height: 324.92px;
+      width: 768px;
+      background-image: url('../images/hero/iceCreamFaceTab.svg'),
+        url('../images/hero/iceCreamBodyTab.png'),
+        url('../images/hero/iceCreamDotsRightTab.svg'),
+        url('../images/hero/iceCreamDotsLeftTab.svg');
+      background-position: 83% 0, 82%, bottom right, bottom left;
+    }
+    @media screen and (min-width: 1200px) {
+      height: 561px;
+      width: 1200px;
+      background-image: url('../images/hero/iceCreamFacePC.svg'),
+        url('../images/hero/iceCreamBodyPC.png'),
+        url('../images/hero/DotsPC.svg');
+      background-position: 85% 100%, 82%, bottom;
+    }
   }
 }
 .image-thumb-shine {

@@ -50,7 +50,7 @@
 }
 
 .advantages-list__item:nth-child(1)::before {
-  background-image: url('../images/advantages/cow.png');
+  background-image: url('./images/advantages/cow.png');
 }
 
 @media (min-device-pixel-ratio: 2),
@@ -58,12 +58,12 @@
   (min-resolution: 192dpi),
   (min-resolution: 2dppx) {
   .advantages-list__item:nth-child(1)::before {
-    background-image: url('../images/advantages/cow@2x.png');
+    background-image: url('./images/advantages/cow@2x.png');
   }
 }
 
 .advantages-list__item:nth-child(2)::before {
-  background-image: url('../images/advantages/weight.png');
+  background-image: url('./images/advantages/weight.png');
 }
 
 @media (min-device-pixel-ratio: 2),
@@ -71,12 +71,12 @@
   (min-resolution: 192dpi),
   (min-resolution: 2dppx) {
   .advantages-list__item:nth-child(2)::before {
-    background-image: url('../images/advantages/weight@2x.png');
+    background-image: url('./images/advantages/weight@2x.png');
   }
 }
 
 .advantages-list__item:nth-child(3)::before {
-  background-image: url('../images/advantages/ice-cream.png');
+  background-image: url('./images/advantages/ice-cream.png');
 }
 
 @media (min-device-pixel-ratio: 2),
@@ -84,7 +84,7 @@
   (min-resolution: 192dpi),
   (min-resolution: 2dppx) {
   .advantages-list__item:nth-child(3)::before {
-    background-image: url('../images/advantages/ice-cream@2x.png');
+    background-image: url('./images/advantages/ice-cream@2x.png');
   }
 }
 

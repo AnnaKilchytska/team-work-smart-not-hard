@@ -1,4 +1,68 @@
-<section class="section section--products">
-  <p class="section__suptitle">100% natural</p>
-  <h2 class="section__title">products</h2>
+<section id="products" class="section section--products products">
+  <div class="container">
+    <p class="section__suptitle products__suptitle">100% natural</p>
+    <h2 class="section__title products__title">products</h2>
+    <ul class="products-list">
+      <!-- картка продукту 1 -->
+      <li class="products-list__item">
+        <div>
+          <h2 class="products-list__title">ice cream</h2>
+          <p class="products-list__descr">
+            Soft ice cream with a delicate taste. Made with milk, cream, sugar
+            and natural stabilizer
+          </p>
+        </div>
+
+        <button
+          type="button"
+          class="products-list__button"
+          data-modal-products-open
+        >
+          <svg class="products-list__icon-arrow" aria-label="arrow icon">
+            <use href="./images/icons.svg#icon-read-more-arrow"></use>
+          </svg>
+        </button>
+      </li>
+      <!-- картка продукту 2 -->
+      <li class="products-list__item">
+        <div>
+          <h2 class="products-list__title">ice coffee</h2>
+          <p class="products-list__descr">
+            Fragrant invigorating drink created from 100% natural ingredients
+            without the use of preservatives and flavor enhancers
+          </p>
+        </div>
+
+        <button
+          type="button"
+          class="products-list__button"
+          data-modal-products-second-open
+        >
+          <svg class="products-list__icon-arrow" aria-label="arrow icon">
+            <use href="./images/icons.svg#icon-read-more-arrow"></use>
+          </svg>
+        </button>
+      </li>
+      <!-- картка продукту 3 -->
+      <li class="products-list__item">
+        <div>
+          <h2 class="products-list__title">milkshakes</h2>
+          <p class="products-list__descr">
+            Sweet drinks based on milk and ice cream, supplemented with syrups,
+            fruits, berries and other sweets of your choice
+          </p>
+        </div>
+
+        <button
+          type="button"
+          class="products-list__button"
+          data-modal-products-third-open
+        >
+          <svg class="products-list__icon-arrow" aria-label="arrow icon">
+            <use href="./images/icons.svg#icon-read-more-arrow"></use>
+          </svg>
+        </button>
+      </li>
+    </ul>
+  </div>
 </section>

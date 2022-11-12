@@ -1,9 +1,13 @@
 <!DOCTYPE html>
-<html lang="ru">
+<html lang="en">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Page title</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+
     <link
       rel="apple-touch-icon"
       sizes="180x180"
@@ -24,25 +28,38 @@
     <link rel="manifest" href="./images/favicon/site.webmanifest" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+
     <link
-      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;800;900&family=Seymour+One&display=swap"
+      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;800;900&family=Roboto:wght@700&family=Seymour+One&display=swap"
       rel="stylesheet"
     />
+
+    <!-- Css for Scroll Review -->
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.css"
+    />
+
     <link rel="stylesheet" href="./sass/main.scss" />
     <script type="module" src="./index.js"></script>
+    <script type="module" src="./js/buy-now-modal.js"></script>
+    <script type="module" src="./js/burger-menu.js"></script>
   </head>
   <body>
     <!-- ❗️❗️❗️ Add partials like so for every page -->
 
     <include src="./partials/header.html"></include>
+    <include src="./partials/buy-now.html"></include>
     <include src="./partials/hero.html"></include>
     <include src="./partials/mobile-menu.html"></include>
     <include src="./partials/products.html"></include>
     <include src="./partials/about.html"></include>
     <include src="./partials/advantages.html"></include>
-    <include src="./partials/gallery.html"></include>
+    <!-- <include src="./partials/gallery.html"></include>
     <include src="./partials/customer-reviews.html"></include>
-    <include src="./partials/contacts.html"></include>
+    <include src="./partials/contacts.html"></include> -->
+    <include src="./partials/gallery-review-contacts.html"></include>
     <include src="./partials/footer.html"></include>
     <include src="./partials/products-modal.html"></include>
     <include src="./partials/products-modal-second.html"></include>
@@ -50,8 +67,30 @@
     <include src="./partials/about-modal.html"></include>
     <include src="./partials/contacts-modal.html"></include>
 
+
     <script src="./js/products-modal.js"></script>
     <script src="./js/products-modal-second.js"></script>
     <script src="./js/products-modal-third.js"></script>
+
+    <!-- (Start)     Script for Scroll Review -->
+    <script
+      type="text/javascript"
+      src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.1/jquery.min.js"
+    ></script>
+    <script
+      type="text/javascript"
+      src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.js"
+    ></script>
+    <script type="text/javascript" src="./js/sliderScript.js"></script>
+    <!--  (End)   -->
+
+    <include src="./partials/button.html"></include>
+    <include src="./partials/our-locations-modal.html"></include>
+    <include src="./partials/franchise-modal.html"></include>
+    <script src="./js/modal-location.js"></script>
+    <script src="./js/modal-franchise.js"></script>
+
+    <script src="./js/about-modal.js"></script>
+
   </body>
 </html>

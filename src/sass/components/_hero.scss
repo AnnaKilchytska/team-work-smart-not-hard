@@ -1,0 +1,352 @@
+.hero {
+  background-color: $main-bg-color;
+  padding-top: 60px;
+  position: relative;
+
+  @media screen and (min-width: 768px) {
+    padding-top: 38px;
+    padding-bottom: 0;
+  }
+
+  @media screen and (min-width: 1200px) {
+    padding-top: 40px;
+
+    background-color: #84a178;
+  }
+}
+
+.hero__title {
+  font-family: 'Seymour One', sans-serif;
+  font-weight: 400;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+  line-height: 1.26;
+  font-size: 26px;
+  color: $primary-white-color;
+  max-width: 247px;
+  // margin-bottom: 32px;
+
+  &--emphasized {
+    display: inline-block;
+    line-height: 0.97;
+    font-weight: 34px;
+  }
+
+  @media screen and (min-width: 768px) {
+    max-width: 182px;
+    line-height: 1.28;
+    font-size: 18px;
+    margin-bottom: 20px;
+
+    &--emphasized {
+      line-height: 0.82;
+      font-size: 24px;
+      @media screen and (min-width: 1200px) {
+        max-width: 367px;
+        font-size: 38px;
+        line-height: 1.26;
+      }
+    }
+  }
+
+  @media screen and (min-width: 1200px) {
+    max-width: 367px;
+    font-size: 38px;
+    line-height: 1.26;
+    margin-bottom: 28px;
+  }
+}
+
+.flex-container {
+  display: block;
+  position: relative;
+  @media screen and (min-width: 768px) {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+}
+
+.statistics__number {
+  font-weight: 900;
+  font-size: 28px;
+  line-height: 1.21;
+  text-align: right;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+  color: $primary-black-color;
+
+  @media screen and (min-width: 1200px) {
+    font-size: 46px;
+  }
+}
+
+.statistics__unit {
+  font-weight: 400;
+  font-size: 8px;
+  line-height: 1.25;
+  text-align: right;
+  color: $primary-white-color;
+
+  @media screen and (min-width: 1200px) {
+    font-size: 14px;
+    line-height: 1.21;
+  }
+}
+
+.statistics {
+  @media screen and (max-width: 767px) {
+    display: none;
+  }
+}
+
+.buttons-list {
+  display: flex;
+  margin-top: 20px;
+  @media screen and (max-width: 767px) {
+    padding-bottom: 239px;
+  }
+
+  @media screen and (min-width: 768px) {
+    margin-bottom: 28px;
+  }
+
+  @media screen and (min-width: 1200px) {
+    margin-top: 32px;
+    margin-bottom: 42px;
+  }
+}
+
+.hero-btn.products-btn {
+  padding: 8px 18px;
+  margin-right: 8px;
+
+  @media screen and (min-width: 1200px) {
+    padding: 12px 34px;
+    margin-right: 34px;
+  }
+}
+
+.hero-btn.production {
+  // cursor: pointer;
+  outline: none;
+  padding: 8px 18px;
+
+  @media screen and (min-width: 1200px) {
+    padding: 12px 34px;
+  }
+}
+
+.info {
+  display: flex;
+  align-items: center;
+  column-gap: 33px;
+
+  @media screen and (max-width: 767px) {
+    display: none;
+  }
+  @media screen and (min-width: 768px) {
+    margin-bottom: 13px;
+  }
+  @media screen and (min-width: 1200px) {
+    column-gap: 14px;
+    margin-bottom: 65px;
+  }
+}
+
+.info__text {
+  margin-bottom: 20px;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 1.4;
+  color: $primary-white-color;
+
+  @media screen and (min-width: 1200px) {
+    margin-bottom: 32px;
+    font-size: 14px;
+  }
+}
+
+.info__img {
+  width: 152px;
+  height: 152px;
+  border-radius: 50%;
+
+  @media screen and (min-width: 1200px) {
+    width: 225px;
+    height: 225px;
+  }
+}
+
+.info__descr {
+  max-width: 152px;
+  align-self: flex-end;
+  @media screen and (min-width: 1200px) {
+    max-width: 200px;
+  }
+}
+
+.right-side {
+  display: flex;
+
+  @media screen and (min-width: 768px) {
+    position: absolute;
+    right: 0;
+    top: 0;
+  }
+}
+
+.image {
+  width: 157px;
+
+  @media screen and (min-width: 768px) {
+    width: 257px;
+  }
+
+  @media screen and (min-width: 1200px) {
+    right: 0;
+    bottom: 0;
+    width: 447px;
+  }
+}
+
+//Mороженка
+.image-thumb {
+  animation-name: animApear;
+  animation-duration: 1.5s;
+  animation-timing-function: ease-in-out;
+  margin-left: auto;
+  margin-right: auto;
+  background-repeat: no-repeat;
+  width: 100%;
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  height: 219px;
+
+  background-image: url('../images/hero/iceCreamFace.svg'),
+    url('../images/hero/iceCreamBody.png'),
+    url('../images/hero/iceCreamDotsRight.svg'),
+    url('../images/hero/iceCreamDotsLeft.svg');
+  background-position: center, center, bottom right, bottom left;
+  @media screen and (min-width: 480px) {
+    width: 480px;
+  }
+  @media screen and (min-width: 768px) {
+    background-image: url('../images/hero/iceCreamFace.svg'),
+      url('../images/hero/iceCreamBody.png'),
+      url('../images/hero/iceCreamDotsRight.svg'),
+      url('../images/hero/iceCreamDotsLeft.svg');
+    background-position: center, center, bottom right, bottom left;
+    @media screen and (min-width: 768px) {
+      height: 324.92px;
+      width: 768px;
+      background-image: url('../images/hero/iceCreamFaceTab.svg'),
+        url('../images/hero/iceCreamBodyTab.png'),
+        url('../images/hero/iceCreamDotsRightTab.svg'),
+        url('../images/hero/iceCreamDotsLeftTab.svg');
+      background-position: 83% 0, 82%, bottom right, bottom left;
+    }
+    @media screen and (min-width: 1200px) {
+      height: 561px;
+      width: 1200px;
+      background-image: url('../images/hero/iceCreamFacePC.svg'),
+        url('../images/hero/iceCreamBodyPC.png'),
+        url('../images/hero/DotsPC.svg');
+      background-position: 85% 100%, 82%, bottom;
+    }
+  }
+}
+.image-thumb-shine {
+  animation-timing-function: ease-in-out;
+  margin-left: auto;
+  margin-right: auto;
+  width: 167.54px;
+  height: 218.27px;
+  position: absolute;
+  bottom: 0;
+  background-image: linear-gradient(
+    rgba(252, 252, 252, 0.44),
+    rgba(252, 252, 252, 0.44) 100%
+  );
+  filter: blur(50px);
+  left: 0;
+  right: 0;
+  animation-name: blurShineIceCream, animApear;
+  animation-timing-function: ease-in-out, ease-in-out;
+  animation-duration: 1.5s, 1.5s;
+  animation-iteration-count: infinite, 1;
+  animation-direction: alternate, normal;
+  @media screen and (min-width: 768px) {
+    width: 266.09px;
+    height: 341.85px;
+    transform: translateX(65%);
+  }
+  @media screen and (min-width: 1200px) {
+    width: 477px;
+    height: 589.64px;
+    filter: blur(100px);
+    transform: translateX(58%);
+  }
+}
+@keyframes blurShineIceCream {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+@keyframes animApear {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+@media screen and (min-device-pixel-ratio: 2) and (max-width: 767px),
+  (-webkit-min-device-pixel-ratio: 2) and (max-width: 767px),
+  (min-resolution: 192dpi) and (max-width: 767px),
+  (min-resolution: 2dppx) and (max-width: 767px) {
+  .image-thumb {
+    height: 219px;
+    background-image: url('../images/hero/iceCreamFace.svg'),
+      url('../images/hero/iceCreamBody@2.png'),
+      url('../images/hero/iceCreamDotsRight.svg'),
+      url('../images/hero/iceCreamDotsLeft.svg');
+    background-position: center, center, bottom right, bottom left;
+    background-size: auto, contain, auto, auto;
+  }
+}
+@media screen and (min-device-pixel-ratio: 2) and (min-width: 768px),
+  (-webkit-min-device-pixel-ratio: 2) and (min-width: 768px),
+  (min-resolution: 192dpi) and (min-width: 768px),
+  (min-resolution: 2dppx) and (min-width: 768px) {
+  .image-thumb {
+    height: 324.92px;
+    width: 768px;
+    background-image: url('../images/hero/iceCreamFaceTab.svg'),
+      url('../images/hero/iceCreamBodyTab@2.png'),
+      url('../images/hero/iceCreamDotsRightTab.svg'),
+      url('../images/hero/iceCreamDotsLeftTab.svg');
+    background-position: 83% 0, 82%, bottom right, bottom left;
+    background-size: auto, contain, auto, auto;
+  }
+}
+@media screen and (min-device-pixel-ratio: 2) and (min-width: 1200px),
+  (-webkit-min-device-pixel-ratio: 2) and (min-width: 1200px),
+  (min-resolution: 192dpi) and (min-width: 1200px),
+  (min-resolution: 2dppx) and (min-width: 1200px) {
+  .image-thumb {
+    height: 561px;
+    width: 1200px;
+    background-image: url('../images/hero/iceCreamFacePC.svg'),
+      url('../images/hero/iceCreamBodyPC@2.png'),
+      url('../images/hero/DotsPC.svg');
+    background-position: 85% 100%, 82%, bottom;
+    background-size: auto, contain, auto, auto;
+  }
+}
+// кінець Mороженки

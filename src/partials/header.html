@@ -1,1 +1,67 @@
-<header></header>
+<header class="pg-header">
+  <div class="container pg-header__container" id="header">
+    <a href="#header" class="pg-header__logo-link">
+      <picture class="pg-header__logo">
+        <source
+          media="(min-width: 1200px)"
+          srcset="
+            ./images/logo/logo-1200-min.png    1x,
+            ./images/logo/logo-1200@2x-min.png 2x
+          "
+        />
+        <source
+          media="(min-width: 768px)"
+          srcset="
+            ./images/logo/logo-768-min.png    1x,
+            ./images/logo/logo-768@2x-min.png 2x
+          "
+        />
+        <source
+          media="(min-width: 200px)"
+          srcset="
+            ./images/logo/logo-320-min.png    1x,
+            ./images/logo/logo-320@2x-min.png 2x
+          "
+        />
+
+        <img
+          src="./images/logo/logo-320-min.png"
+          alt="cite logo - icecreame horn"
+        /> </picture
+    ></a>
+
+    <button class="burger-menu__btn js-open-menu" type="button">
+      <svg class="burger-menu__icon" width="32" height="32">
+        <use href="./images/icons.svg#icon-burger"></use>
+      </svg>
+    </button>
+
+    <nav class="pg-header__nav navigation">
+      <ul class="navigation__list">
+        <li class="navigation__item">
+          <a class="navigation__link" href="#header">Home</a>
+        </li>
+        <li class="navigation__item">
+          <a class="navigation__link" href="#about">How it’s made?</a>
+        </li>
+        <li class="navigation__item">
+          <a class="navigation__link" href="#products">Our products</a>
+        </li>
+        <li class="navigation__item">
+          <a class="navigation__link" href="#contacts">Contact</a>
+        </li>
+      </ul>
+    </nav>
+
+    <button
+      type="button"
+      class="buy-now-btn header__buy-now-btn"
+      js-buy-now-modal-open
+    >
+      Buy now
+      <svg class="btn-icon" width="12px" height="12px">
+        <use href="./images/icons.svg#icon-btn-arrow"></use>
+      </svg>
+    </button>
+  </div>
+</header>

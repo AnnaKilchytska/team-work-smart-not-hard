@@ -1,0 +1,2 @@
+(()=>{const o={openModalBtn:document.querySelector("[data-buy-now-modal-open]"),closeModalBtn:document.querySelector("[data-buy-now-modal-close]"),modal:document.querySelector("[data-buy-now-modal]"),body:document.querySelector("body")};function e(){o.modal.classList.toggle("is-hidden"),o.body.classList.toggle("body--modal")}o.openModalBtn.addEventListener("click",e),o.closeModalBtn.addEventListener("click",e)})();
+//# sourceMappingURL=index.1e229550.js.map

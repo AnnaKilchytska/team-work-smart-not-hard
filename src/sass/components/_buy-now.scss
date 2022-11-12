@@ -1,0 +1,324 @@
+.buy-now {
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 9999;
+  width: 100vw;
+  min-height: 100vh;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  background-color: rgba(0, 0, 0, 0.2);
+
+  overflow: hidden;
+
+  transition: visibility 500ms cubic-bezier(0.4, 0, 0.2, 1),
+    opacity 500ms cubic-bezier(0.4, 0, 0.2, 1);
+  z-index: 999;
+}
+
+.buy-now__window {
+  position: relative;
+  overflow-y: auto;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  width: 100%;
+  padding: 28px;
+
+  border: 2px solid $main-accent-color;
+  border-radius: 10px;
+
+  background-color: $primary-white-color;
+}
+
+.buy-now__close-icon {
+  fill: currentColor;
+}
+
+.buy-now__close-button {
+  position: absolute;
+  top: 8px;
+  right: 8px;
+
+  width: 16px;
+  height: 16px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0;
+
+  border: 0;
+  background-color: transparent;
+  color: $primary-black-color;
+
+  cursor: pointer;
+
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+  &:hover,
+  &:focus,
+  &:active {
+    color: $active-btn-color;
+  }
+}
+
+.buy-now__title {
+  margin-bottom: 84px;
+
+  text-align: center;
+  font-family: 'Seymour One';
+  font-size: 16px;
+  line-height: 1.5;
+  color: $primary-black-color;
+}
+
+.buy-now__productlist {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 84px;
+
+  margin-bottom: 24px;
+}
+
+.buy-now__listitem {
+  position: relative;
+
+  width: 132px;
+  height: 136.4px;
+  padding-bottom: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-end;
+
+  background-color: transparent;
+  border: 2px solid $modal-green-border-color;
+  box-shadow: 0px 5.26027px 19.726px rgba(212, 20, 67, 0.1);
+  border-radius: 15.7808px;
+
+  &::before {
+    content: '';
+    position: absolute;
+    top: -50%;
+    z-index: 9999;
+
+    width: 131px;
+    height: 131px;
+    border-radius: 98px;
+    background-size: 102%;
+    background-position: center;
+    overflow: hidden;
+
+    box-shadow: 0px 5.26027px 19.726px rgba(153, 114, 23, 0.25);
+  }
+
+  &::after {
+    content: '';
+    position: absolute;
+    top: calc(-50% + 6px);
+    width: 131px;
+    height: 131px;
+
+    border-radius: 98px;
+  }
+
+  &:first-of-type {
+    &::before,
+    &::after {
+      background: linear-gradient(
+          0deg,
+          rgba(156, 190, 143, 0.7),
+          rgba(156, 190, 143, 0.7)
+        ),
+        #d9d9d9;
+    }
+    &::before {
+      content: '';
+      background-image: url('/src/images/buy-now/ice-coffee-modal-min.jpg');
+    }
+    @media (min-device-pixel-ratio: 2),
+      (-webkit-min-device-pixel-ratio: 2),
+      (min-resolution: 192dpi),
+      (min-resolution: 2dppx) {
+      &::before {
+        background-image: url('/src/images/buy-now/ice-coffee-modal@2x-min.jpg');
+        background-size: cover;
+      }
+    }
+
+    &::after {
+      content: '';
+      box-shadow: 0px 5.26027px 19.726px rgba(10, 136, 23, 0.25);
+    }
+  }
+
+  &:nth-of-type(2) {
+    background-color: $additional-bg-color-2;
+    border-color: $additional-bg-color-2;
+
+    &::before,
+    &::after {
+      background: linear-gradient(
+          0deg,
+          rgba(248, 210, 78, 0.7),
+          rgba(248, 210, 78, 0.7)
+        ),
+        #d9d9d9;
+    }
+
+    &::before {
+      content: '';
+      background-image: url('/src/images/buy-now/ice-cream-modal-min.jpg');
+    }
+    @media (min-device-pixel-ratio: 2),
+      (-webkit-min-device-pixel-ratio: 2),
+      (min-resolution: 192dpi),
+      (min-resolution: 2dppx) {
+      &::before {
+        background-image: url('/src/images/buy-now/ice-cream-modal@2x-min.jpg');
+        background-size: cover;
+      }
+    }
+
+    &::after {
+      content: '';
+      box-shadow: 0px 5.26027px 19.726px rgba(153, 114, 23, 0.25);
+    }
+  }
+
+  &:nth-of-type(3) {
+    border-color: $additional-bg-color-3;
+
+    &::before,
+    &::after {
+      background: linear-gradient(
+          0deg,
+          rgba(213, 117, 63, 0.7),
+          rgba(213, 117, 63, 0.7)
+        ),
+        #d9d9d9;
+    }
+    &::before {
+      content: '';
+      background-image: url('/src/images/buy-now/milkshake-modal-min.jpg');
+    }
+    @media (min-device-pixel-ratio: 2),
+      (-webkit-min-device-pixel-ratio: 2),
+      (min-resolution: 192dpi),
+      (min-resolution: 2dppx) {
+      &::before {
+        background-image: url('/src/images/buy-now/milkshake-modal@2x-min.jpg');
+        background-size: cover;
+      }
+    }
+    &::after {
+      content: '';
+      box-shadow: 0px 5.26027px 19.726px rgba(0, 0, 0, 0.25);
+    }
+  }
+}
+
+.buy-now__itemtext {
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 1.25;
+  text-align: center;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+
+  color: $primary-black-color;
+}
+
+.buy-now__form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.buy-now__input {
+  width: 224px;
+  margin-bottom: 12px;
+  padding: 8px 12px;
+
+  background: rgba(248, 210, 78, 0.1);
+  border: 1px solid #84a178;
+  border-radius: 10px;
+
+  &,
+  &::placeholder {
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 1.4;
+    color: $primary-black-color;
+  }
+}
+
+textarea.buy-now__input {
+  resize: none;
+  margin-bottom: 24px;
+  height: 65px;
+}
+/*************************/
+
+//media for buy now modal window
+//tablet and laptop
+@media screen and (min-width: 768px) {
+  .buy-now {
+    position: fixed;
+  }
+
+  .buy-now__window {
+    width: 568px;
+    max-height: 100vh;
+    padding: 32px;
+  }
+
+  .buy-now__close-button {
+    top: 20px;
+    right: 20px;
+
+    width: 20px;
+    height: 20px;
+  }
+
+  .buy-now__title {
+    margin-bottom: 103px;
+    font-size: 20px;
+    line-height: 1.4;
+  }
+
+  .buy-now__productlist {
+    flex-direction: row;
+    gap: 32px;
+
+    margin-bottom: 40px;
+  }
+
+  .buy-now__input {
+    width: 368px;
+    margin-bottom: 16px;
+    padding: 11px 16px;
+
+    &,
+    &::placeholder {
+      font-size: 14px;
+    }
+  }
+
+  textarea.buy-now__input {
+    margin-bottom: 32px;
+    height: 84px;
+  }
+
+  /*******************/
+}
+
+.is-hidden {
+  display: none;
+}

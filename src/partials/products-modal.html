@@ -1,0 +1,126 @@
+<div class="products-backdrop is-hidden" data-modal-products>
+  <div class="modal-products">
+    <button class="modal-products__close-btn" data-modal-products-close>
+      <svg
+        class="modal-products__close-icon"
+        width="20"
+        height="20"
+        aria-label="кнопка закриття"
+      >
+        <use href="./images/icons.svg#icon-btn-close"></use>
+      </svg>
+    </button>
+    <h1 class="modal-products__title modal-products__title_first">
+      Chololate icecream
+    </h1>
+    <ul class="modal-products-useful modal-products-useful_first">
+      <li class="modal-products-useful__item">
+        <div
+          class="modal-products-useful__nutrients modal-products-useful__nutrients_fist"
+        >
+          kcal
+          <span
+            class="modal-products-useful__quantity modal-products-useful__quantity_first"
+            >320</span
+          >
+        </div>
+      </li>
+      <li class="modal-products-useful__item">
+        <div
+          class="modal-products-useful__nutrients modal-products-useful__nutrients_first"
+        >
+          Prote...
+          <span
+            class="modal-products-useful__quantity modal-products-useful__quantity_first"
+            >4g</span
+          >
+        </div>
+      </li>
+      <li class="modal-products-useful__item">
+        <div
+          class="modal-products-useful__nutrients modal-products-useful__nutrients_first"
+        >
+          Fats
+          <span
+            class="modal-products-useful__quantity modal-products-useful__quantity_first"
+            >8,2g</span
+          >
+        </div>
+      </li>
+      <li class="modal-products-useful__item">
+        <div
+          class="modal-products-useful__nutrients modal-products-useful__nutrients_first"
+        >
+          Carbs
+          <span
+            class="modal-products-useful__quantity modal-products-useful__quantity_first"
+            >40,4g</span
+          >
+        </div>
+      </li>
+    </ul>
+    <h2 class="modal-products__subtitle">Ingredients</h2>
+    <ul class="modal-products-ingredients">
+      <li class="modal-products-ingredients__item">
+        <span>Milk</span><span>100ml</span>
+      </li>
+      <li class="modal-products-ingredients__item">
+        <span>Belgian chocolate</span><span>20g</span>
+      </li>
+      <li class="modal-products-ingredients__item">
+        <span>Cream</span><span>150ml</span>
+      </li>
+      <li class="modal-products-ingredients__item">
+        <span>Cocoa powder</span><span>30g</span>
+      </li>
+      <li class="modal-products-ingredients__item">
+        <span>Sugar</span><span>40g</span>
+      </li>
+      <li class="modal-products-ingredients__item">
+        <span>Vanilla sugar</span><span>10g</span>
+      </li>
+    </ul>
+    <form>
+      <ul class="modal-products-form">
+        <li class="modal-products-form__item">
+          <label>
+            <input
+              type="text"
+              name="user-name"
+              class="modal-products-form__input modal-products-form__input_first modal-products-form__input_narrow"
+              placeholder="Name"
+              required
+              pattern="[a-zA-Zа-яА-яіІїЇєЄ']+"
+              title="Олег"
+              autocomplete="off"
+            />
+          </label>
+        </li>
+        <li class="modal-products-form__item">
+          <label>
+            <input
+              type="tel"
+              name="user-phone"
+              class="modal-products-form__input modal-products-form__input_first modal-products-form__input_narrow"
+              placeholder="Phone"
+              required
+              autocomplete="off"
+            />
+          </label>
+        </li>
+
+        <li class="modal-products-form__item">
+          <label>
+            <textarea
+              name="user-message"
+              class="modal-products-form__input modal-products-form__input_first modal-products-form__input_wide"
+              placeholder="Comment"
+              autocomplete="off"
+            ></textarea>
+          </label>
+        </li>
+      </ul>
+      <button type="submit" class="submit-btn">Submit</button>
+    </form>
+  </div>
+</div>

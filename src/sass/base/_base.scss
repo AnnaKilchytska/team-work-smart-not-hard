@@ -7,13 +7,14 @@ body {
 @media screen and (min-width: 768px) {
   .body--modal {
     height: 100vh;
-    overflow: hidden;
+    // overflow: hidden;
   }
 }
 
-body.modal-open {
-  overflow: hidden;
-}
+//to stop the main content from scrolling
+// body.modal-open {
+//   overflow: hidden;
+// }
 
 h1,
 h2,

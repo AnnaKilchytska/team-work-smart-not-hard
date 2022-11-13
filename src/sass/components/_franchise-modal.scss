@@ -24,12 +24,13 @@
   padding-bottom: 26px;
   width: calc(100% - 50px);
   max-width: 430px;
-  // max-height: 100vh;
+  max-height: 100vh;
+  overflow-y: auto;
+  text-align: center;
 
   background-color: $primary-white-color;
   border-radius: 10px;
   border: 2px solid $main-accent-color;
-  text-align: center;
 }
 
 .franchise-modal__close-btn {

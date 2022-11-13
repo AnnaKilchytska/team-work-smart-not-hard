@@ -2081,6 +2081,9 @@ button.header__buy-now-btn {
   bottom: 200px;
   right: 15px;
 }
+.arrow-to-top:hover .arrow-to-top-svg, .arrow-to-top:focus .arrow-to-top-svg {
+  fill: #0a8817;
+}
 @media screen and (min-width: 288px) {
   .arrow-to-top {
     right: 15px;

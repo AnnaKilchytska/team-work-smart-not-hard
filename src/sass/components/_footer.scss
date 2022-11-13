@@ -188,6 +188,10 @@
 position: absolute;
 bottom: 200px;
 right: 15px;
+&:hover .arrow-to-top-svg,  
+&:focus .arrow-to-top-svg {
+  fill:$active-btn-color;
+}
  
 @media screen and (min-width: 288px) {
   right: 15px;

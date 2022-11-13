@@ -3,14 +3,18 @@
   padding-top: 60px;
   position: relative;
 
+  @media screen and (max-width: 767px) {
+    padding-bottom: 239px;
+  }
+
   @media screen and (min-width: 768px) {
     padding-top: 38px;
-    padding-bottom: 0;
+    padding-bottom: 13px;
   }
 
   @media screen and (min-width: 1200px) {
     padding-top: 40px;
-
+    padding-bottom: 65px;
     background-color: #84a178;
   }
 }
@@ -103,9 +107,6 @@
 .buttons-list {
   display: flex;
   margin-top: 20px;
-  @media screen and (max-width: 767px) {
-    padding-bottom: 239px;
-  }
 
   @media screen and (min-width: 768px) {
     margin-bottom: 28px;
@@ -117,23 +118,39 @@
   }
 }
 
-.hero-btn.products-btn {
-  padding: 8px 18px;
+.buttons-list__item {
   margin-right: 8px;
 
   @media screen and (min-width: 1200px) {
-    padding: 12px 34px;
     margin-right: 34px;
+  }
+}
+
+.buttons-list__item:last-child {
+  margin-right: 0;
+}
+
+.hero-btn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.hero-btn.products-btn {
+  width: 82px;
+
+  @media screen and (min-width: 1200px) {
+    width: 134px;
   }
 }
 
 .hero-btn.production {
   // cursor: pointer;
   outline: none;
-  padding: 8px 18px;
+  width: 64px;
 
   @media screen and (min-width: 1200px) {
-    padding: 12px 34px;
+    width: 111px;
   }
 }
 
@@ -146,11 +163,11 @@
     display: none;
   }
   @media screen and (min-width: 768px) {
-    margin-bottom: 13px;
+    // margin-bottom: 13px;
   }
   @media screen and (min-width: 1200px) {
     column-gap: 14px;
-    margin-bottom: 65px;
+    // margin-bottom: 65px;
   }
 }
 

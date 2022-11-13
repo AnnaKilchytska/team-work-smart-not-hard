@@ -2080,17 +2080,12 @@ button.header__buy-now-btn {
   position: absolute;
   bottom: 200px;
   right: 15px;
+  transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .arrow-to-top:hover .arrow-to-top-svg, .arrow-to-top:focus .arrow-to-top-svg {
   fill: #0a8817;
 }
 @media screen and (min-width: 288px) {
-  .arrow-to-top {
-    right: 15px;
-    bottom: 180px;
-  }
-}
-@media screen and (min-width: 480px) {
   .arrow-to-top {
     right: 15px;
     bottom: 180px;
@@ -2114,6 +2109,7 @@ button.header__buy-now-btn {
   width: 40px;
   height: 50px;
   overflow: hidden;
+  transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 @media screen and (min-width: 1200px) {
   .arrow-to-top-svg {

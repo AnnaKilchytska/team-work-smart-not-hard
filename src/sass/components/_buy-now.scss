@@ -319,6 +319,8 @@ textarea.buy-now__input {
   /*******************/
 }
 
-.is-hidden {
-  display: none;
+.buy-now.is-hidden {
+  visibility: none;
+  opacity: 0;
+  pointer-events: none;
 }

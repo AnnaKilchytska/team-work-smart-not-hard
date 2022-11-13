@@ -24,12 +24,13 @@
   padding-bottom: 26px;
   width: calc(100% - 50px);
   max-width: 430px;
-  // max-height: 100vh;
+  max-height: 100vh;
+  overflow-y: auto;
+  text-align: center;
 
   background-color: $primary-white-color;
   border-radius: 10px;
   border: 2px solid $main-accent-color;
-  text-align: center;
 }
 
 .franchise-modal__close-btn {
@@ -76,8 +77,16 @@
   color: $primary-black-color;
 }
 
-.franchise-modal__input {
+.franchise-modal__field {
+  display: block;
   margin-bottom: 12px;
+
+  &:last-of-type {
+    margin-bottom: 24px;
+  }
+}
+
+.franchise-modal__input {
   padding-top: 0;
   padding-right: 0;
   padding-bottom: 0;
@@ -97,7 +106,6 @@
 }
 
 .franchise-modal__message {
-  margin-bottom: 24px;
   padding-top: 8px;
   padding-right: 0;
   padding-bottom: 0;
@@ -172,8 +180,15 @@
     font-size: 16px;
   }
 
-  .franchise-modal__input {
+  .franchise-modal__field {
     margin-bottom: 16px;
+
+    &:last-of-type {
+      margin-bottom: 32px;
+    }
+  }
+
+  .franchise-modal__input {
     padding-left: 16px;
     max-width: 368px;
     height: 42px;
@@ -182,7 +197,6 @@
   }
 
   .franchise-modal__message {
-    margin-bottom: 32px;
     padding-top: 11px;
     padding-left: 16px;
     max-width: 368px;

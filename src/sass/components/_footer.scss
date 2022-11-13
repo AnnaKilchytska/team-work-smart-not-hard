@@ -193,15 +193,17 @@
 position: absolute;
 bottom: 200px;
 right: 15px;
- 
+transition: fill $cubic;
+&:hover .arrow-to-top-svg,  
+&:focus .arrow-to-top-svg {
+  fill:$active-btn-color;
+}
+
 @media screen and (min-width: 288px) {
   right: 15px;
 bottom: 180px;
   }
-  @media screen and (min-width: 480px) {
-    right: 15px;
-  bottom: 180px;
-    }
+    
   @media screen and (min-width: 768px) {
     right: 30px;
   bottom: 200px;
@@ -217,6 +219,7 @@ bottom: 180px;
   width: 40px;
   height: 50px;
 overflow: hidden;
+transition: fill $cubic;
 @media screen and (min-width: 1200px) {
   width: 60px;
   height: 70px;
